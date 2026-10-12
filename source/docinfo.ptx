@@ -20,6 +20,18 @@
     \newcommand{\bbZ}{\mathbb Z}
     \newcommand{\bbQ}{\mathbb Q}
     \newcommand{\bbR}{\mathbb R}
+
+    \newenvironment{sysofeqns}[1]
+    {\left\{\begin{array}{#1}}
+    {\end{array}\right.}
+
+    \newenvironment{abmatrix}[1]
+    {\left[\begin{array}{#1}}
+    {\end{array}\right]}
+
+    \newenvironment{avmatrix}[1]
+    {\left\lvert\begin{array}{#1}}
+    {\end{array}\right\rvert}
   </macros>
 
   <!-- If you put any latex-image elements you can include preambles -->
