@@ -19,6 +19,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="_static/pretext/fonts/material-symbols-outlined.css">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<style>
+@counter-style ptx-marker-1 { system: extends lower-roman; prefix: '('; suffix: ') '; }
+</style>
 <script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
 startMathJax({
 hasWebworkReps: false,
@@ -118,6 +121,18 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\bbZ}{\mathbb Z}
 \newcommand{\bbQ}{\mathbb Q}
 \newcommand{\bbR}{\mathbb R}
+
+\newenvironment{sysofeqns}[1]
+{\left\{\begin{array}{#1}}
+{\end{array}\right.}
+
+\newenvironment{abmatrix}[1]
+{\left[\begin{array}{#1}}
+{\end{array}\right]}
+
+\newenvironment{avmatrix}[1]
+{\left\lvert\begin{array}{#1}}
+{\end{array}\right\rvert}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -132,6 +147,24 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list active" id="ptx-toc-group-ch-chapter-title">
 <li class="toc-item toc-introduction"><div class="toc-title-box"><a href="ch-chapter-title-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-section-name.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Section Title</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter-systems.html" class="internal"><span class="codenumber">2</span> <span class="title">Systems of linear equations</span></a></div>
+<ul id="ptx-toc-group-chapter-systems" class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-systems.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Discovery guide</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-systems-terminology.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Terminology and notation</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-systems-concepts.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Concepts</span></a></div>
+<ul id="ptx-toc-group-section-systems-concepts" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-systems-concepts.html#subsection-systems-concepts-solutions" class="internal"><span class="codenumber">2.3.1</span> <span class="title">System solutions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-systems-concepts.html#subsection-systems-concepts-determining-solutions" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Determining solutions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-systems-examples.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Examples</span></a></div>
+<ul id="ptx-toc-group-section-systems-examples" class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-systems-examples.html#subsection-systems-examples-row-ops-vs-equations" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Row operations versus equation manipulations</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
