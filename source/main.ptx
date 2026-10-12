@@ -5,8 +5,8 @@
   <xi:include href="./docinfo.ptx" />
 
   <book xml:id="my-great-book">
-    <title>MTH 329: Elementary Linear Algebra</title>
-    <subtitle>An example to get you started</subtitle>
+    <title>Elementary Linear Algebra</title>
+    <subtitle>MTH 329</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
