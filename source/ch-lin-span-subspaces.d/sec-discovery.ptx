@@ -197,11 +197,9 @@ respective owners.
 		</ul>
 		
 		</p>
-	
 	</introduction>
 
-
-	<task><statement><p>
+	<p>
 		In <m>\bbR^2</m>:
 			<task><statement><p>
 				All points on the line <m>y=x</m>.
@@ -214,9 +212,9 @@ respective owners.
 			<task><statement><p>
 				All points on the circle of radius 1 centered at the origin.
 			</p></statement></task>
-	</p></statement></task>
+	</p>
 
-	<task><statement><p>
+	<p>
 		In <m>\bbR^3</m>:
 			<task><statement><p>
 				All points on the <m>xy</m>-plane.
@@ -231,11 +229,11 @@ respective owners.
 				<m>A\bfx=\bfzero</m>, where <m>A</m> is some fixed
 				<m>2 \times 3</m> matrix.
 			</p></statement></task>
-				<m>\spn\left\{ \bfu = \threevec{1}{1}{1}, \bfv = \threevec{3}{2}{-1}\right\}</m>.
+				
 			<task><statement><p>
-
+				<m>\spn\left\{ \bfu = \threevec{1}{1}{1}, \bfv = \threevec{3}{2}{-1}\right\}</m>.
 			</p></statement></task>
-	</p></statement></task>
+	</p>
 </activity>
 
 
