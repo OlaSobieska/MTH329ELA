@@ -20,8 +20,7 @@ respective owners.
 
 <xi:include href="./ch-lin-span-subspaces.d/sec-discovery.ptx" />
 
-<!-- 
-<xi:include href="./ch-orthog.d/sec-terminology.ptx" />
+<!-- <xi:include href="./ch-orthog.d/sec-terminology.ptx" />
 <xi:include href="./ch-orthog.d/sec-concepts.ptx" />
 <xi:include href="./ch-orthog.d/sec-examples.ptx" />
 <xi:include href="./ch-orthog.d/sec-theory.ptx" /> -->

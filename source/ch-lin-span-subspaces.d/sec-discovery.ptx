@@ -23,7 +23,7 @@ respective owners.
 	<introduction>
 
 		<p>
-        Recall or learn that a vector <m>\bfv</m> is a 
+        Recall (or learn) that a vector <m>\bfv</m> is a 
         <term>linear combination</term> of vectors 
         <m>\bfv_{1}, \bfv_{2}, \ldots, \bfv_{n}</m> if you can write <m>\bfv</m> as a sum of scalar multiples of
         <m>\bfv_{1},\bfv_{2},\ldots, \bfv_{n}</m>, i.e.
@@ -61,11 +61,13 @@ respective owners.
         </p></statement></task>
 </activity>        
 
-    <definition><p>
+<definition xml:id="definition-span">
+    <statement><p>
         The collection of <em>all possible linear combinations</em> of a set of vectors
         is called the <term>span</term> of those vectors, denoted
         <md>\spn\{\bfv_{1}, \bfv_{2}, \ldots, \bfv_{n}\} = \{ c_{1} \bfv_{1} + c_{2} \bfv_{2} + \cdots + c_{n} \bfv_{n} \mid c_{i} \in \bbR \}.</md>
-    </p></definition>
+    </p></statement>
+</definition>
 
 
 <activity xml:id="activity-span-as-a-word"> 
@@ -155,7 +157,7 @@ respective owners.
 </p>
 
 <definition xml:id="definition-subspace">
-    <statement>A subspace of <m>\bbR^{n}</m> is a subset <m>H</m> of <m>\bbR^{n}</m> that
+    <statement><p>A <term>subspace</term> of <m>\bbR^{n}</m> is a subset <m>H</m> of <m>\bbR^{n}</m> that
     satisfies the following three properties:
     <ol marker="(i)">
         <li>
@@ -178,7 +180,7 @@ respective owners.
             </p>
         </li>
     </ol>
-	</statement>
+	</p></statement>
 </definition>
 
 <activity xml:id="activity-subspaces-in-Rn">
