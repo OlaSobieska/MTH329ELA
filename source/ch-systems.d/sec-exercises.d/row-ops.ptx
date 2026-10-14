@@ -219,7 +219,7 @@ respective owners.
 		Most of the coefficients and constant in this equation have a factor of <m>7</m> in common.
 		Usually, in purely algebraic manipulations we would not divide this equation through by that common factor.
 		But when we develop an algorithm for systematically simplifying systems of equations through matrix operations in
-		<xref ref="chapter-row-red" />,
+		<xref ref="ch-row-red" />,
 		we will find that it is advantageous to perform operations to reduce the <q>leading</q> coefficient in some of the equations in the system to <m>1</m>,
 		which is precisely what our chosen operation achieves:
 		<me> 7 x_1 - 21 x_2 + 15 x_3 = 7 \quad \longrightarrow \quad x_1 - 3 x_2 + \tfrac{15}{7} x_3 = 1 </me>.
