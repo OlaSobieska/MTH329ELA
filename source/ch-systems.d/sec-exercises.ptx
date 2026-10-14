@@ -168,18 +168,18 @@ respective owners.
 </exercise>
 
 <!-- Exercise group -->
-<xi:include href="./exercises.d/guess-eqn-solns.ptx" />
+<xi:include href="./sec-exercises.d/guess-eqn-solns.ptx" />
 
 <!-- Exercise group -->
-<xi:include href="./exercises.d/solve-by-intersecting-lines.ptx" />
+<xi:include href="./sec-exercises.d/solve-by-intersecting-lines.ptx" />
 
 <!-- Exercise group -->
-<xi:include href="./exercises.d/convert-sys-to-augmatrix.ptx" />
+<xi:include href="./sec-exercises.d/convert-sys-to-augmatrix.ptx" />
 
 <!-- Exercise group -->
-<xi:include href="./exercises.d/convert-augmatrix-to-sys.ptx" />
+<xi:include href="./sec-exercises.d/convert-augmatrix-to-sys.ptx" />
 
 <!-- Exercise group -->
-<xi:include href="./exercises.d/rowops.ptx" />
+<xi:include href="./sec-exercises.d/rowops.ptx" />
 
 </exercises>
