@@ -41,6 +41,21 @@
     \newcommand{\bfzero}{{\mathbf{0}}}
     \newcommand{\bfone}{{\mathbf{1}}}
 
+    <!--Operators-->
+    \DeclareMathOperator{\adj}{adj}
+    \DeclareMathOperator{\spn}{span}
+    \DeclareMathOperator{\rank}{rank}
+    \DeclareMathOperator{\nullity}{nullity}
+    \DeclareMathOperator{\Tr}{Tr}
+    \DeclareMathOperator{\range}{range}
+    \DeclareMathOperator{\minor}{minor}
+    \DeclareMathOperator{\cof}{cof}
+    \DeclareMathOperator{\col}{col}
+    \DeclareMathOperator{\row}{row}
+    \DeclareMathOperator{\nool}{null}
+    \DeclareMathOperator{\im}{im}
+    \DeclareMathOperator{\diag}{diag}
+
     \newenvironment{sysofeqns}[1]
     {\left\{\begin{array}{#1}}
     {\end{array}\right.}

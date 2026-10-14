@@ -24,14 +24,14 @@ respective owners.
 
 		<p>
         Recall or learn that a vector <m>\bfv</m> is a 
-        <alert>linear combination</alert> of vectors 
+        <term>linear combination</term> of vectors 
         <m>\bfv_{1}, \bfv_{2}, \ldots, \bfv_{n}</m> if you can write <m>\bfv</m> as a sum of scalar multiples of
         <m>\bfv_{1},\bfv_{2},\ldots, \bfv_{n}</m>, i.e.
         if you can find scalars <m>c_{1}, \ldots, c_{n}</m> so that
         <md>
             \bfv = c_{1} \bfv_{1} + c_{2} \bfv_{2} + \cdots + c_{n} \bfv_{n}.
         </md>
-        These <m>c_{i}</m> are called <alert>coefficients</alert>, or sometimes <alert>weights</alert>.
+        These <m>c_{i}</m> are called <term>coefficients</term>, or sometimes <term>weights</term>.
         </p>
         </introduction>
 
@@ -43,7 +43,111 @@ respective owners.
             Is <m>\bfu = \threevec{5}{0}{7}</m> a linear combination of <m>\bfv_{1}</m> and <m>\bfv_{2}</m>?
         </p></statement></task>
 
-        
+        <task><statement><p>
+            Is <m>\bfu = \threevec{5}{1}{7}</m> a linear combination of <m>\bfv_{1}</m> and <m>\bfv_{2}</m>?
+        </p></statement></task>
+
+        <task><statement><p>
+            Can you identify which vectors in <m>\bbR^{3}</m> can be written as a linear
+            combination of <m>\bfv_{1}</m> and <m>\bfv_{2}</m>?
+            Which vectors <em>cannot</em> be written as a linear combination of
+            <m>\bfv_{1}</m> and <m>\bfv_{2}</m>?
+        </p></statement></task>
+
+        <task><statement><p>
+            For any vectors that <em>can</em> be written as a linear combination of
+            <m>\bfv_{1}</m> and <m>\bfv_{2}</m>, determine which coefficients need to be
+            used.
+        </p></statement></task>
+</activity>        
+
+    <definition><statement>
+        The collection of <em>all possible linear combinations</em> of a set of vectors
+        is called the <term>span</term> of those vectors, denoted
+        <md>\spn\{\bfv_{1}, \bfv_{2}, \ldots, \bfv_{n}\} = \{ c_{1} \bfv_{1} + c_{2} \bfv_{2} + \cdots + c_{n} \bfv_{n} \mid c_{i} \in \bbR \}.</md>
+    </statement></definition>
+
+
+<activity xml:id="activity-span-as-a-word"> 
+    <task><statement><p>
+        What is <m>\spn\{\bfv_{1},\bfv_{2}\}</m> for <m>\bfv_{1}</m> and
+        <m>\bfv_{2}</m> from <xref ref="activity-linear-combinations-refresher"/>?
+        (You already computed it in the previous exercise!
+        You're just trying new vocab on.)
+    </p></statement></task>
+</activity>
+
+<activity xml:id="activity-span-geometrically">
+    <introduction><p>
+        Let <m>\bfu_{1} = \twovec{-1}{1}</m> and <m>\bfu_{2} = \twovec{2}{1}</m>. 
+    </p></introduction>
+
+    <task><statement><p>
+        What is <m>\spn\{\bfu_{1}\}</m>?
+        Draw it on a coordinate plane.
+    </p></statement></task>
+
+
+    <task><statement><p>
+        What is <m>\spn\{\bfu_{2}\}</m>?
+        Draw it on a coordinate plane 
+        (maybe in a different color, if you have it).
+    </p></statement></task>
+
+
+    <task><statement><p>
+        What is <m>\spn\{\bfu_{1}, \bfu_{2}\}</m>?
+        Describe it in terms of the coordinate plane (may be hard to draw).
+    </p></statement></task>
+
+
+    <task><statement><p>
+        The vector <m>\twovec{-3}{0}</m> is in <m>\spn\{\bfu_{1}, \bfu_{2}\}</m>.
+        Can you interpret it in the context of the pictures you have drawn?
+    </p></statement></task>
+
+
+    <task><statement><p>
+        If <m>\bfu_{3} = \twovec{0}{1}</m>, what is
+        <m>\spn\{\bfu_{1},\bfu_{2},\bfu_{3}\}</m>?
+        How does it compare to <m>\spn\{\bfu_{1},\bfu_{2}\}</m>?
+    </p></statement></task>
+</activity>
+
+<activity xml:id="activity-span-geometrically-degenerate">
+    <introduction><p>
+        Let <m>\bfw_{1} = \twovec{3}{1}</m> and 
+        <m>\bfw_{2} = \twovec{-6}{2}</m>. 
+    </p></introduction>
+
+    <task><statement><p>
+        What is <m>\spn\{\bfw_{1}\}</m>?
+        Draw it on a coordinate plane.
+    </p></statement></task>
+
+
+    <task><statement><p>
+        What is <m>\spn\{\bfw_{2}\}</m>?
+        Draw it on a coordinate plane 
+        (maybe in a different color, if you have it).
+    </p></statement></task>
+
+
+    <task><statement><p>
+        What is <m>\spn\{\bfw_{1}, \bfw_{2}\}</m>?
+        Draw it on the coordinate plane.
+    </p></statement></task>
+
+    <task><statement><p>
+        How does this differ from <m>\spn\{\bfu_{1}, \bfu_2\}</m>
+        in <xref ref="activity-span-geometrically"/>? 
+        What is it about <m>\bfw_1</m> and <m>/bfw_2</m> 
+        that changes the outcome? 
+    </p></statement></task>
+
+</activity>
+
+
 
 <activity xml:id="activity-subspaces-subspace-test-precursor">
 
