@@ -622,6 +622,78 @@ var ptx_lunr_docs = [
   "body": " Orthogonal vectors  Content!    "
 },
 {
+  "id": "worksheet-lin-span-subspaces",
+  "level": "1",
+  "url": "worksheet-lin-span-subspaces.html",
+  "type": "Worksheet",
+  "number": "14.1",
+  "title": "Discovery guide",
+  "body": " Discovery guide    Recall or learn that a vector is a linear combination of vectors if you can write as a sum of scalar multiples of , i.e. if you can find scalars so that These are called coefficients , or sometimes weights .   Let and .  Is a linear combination of and ?  Is a linear combination of and ?  Can you identify which vectors in can be written as a linear combination of and ? Which vectors cannot be written as a linear combination of and ?  For any vectors that can be written as a linear combination of and , determine which coefficients need to be used.   The collection of all possible linear combinations of a set of vectors is called the span of those vectors, denoted    What is for and from ? (You already computed it in the previous exercise! You're just trying new vocab on.)    Let and .  What is ? Draw it on a coordinate plane.  What is ? Draw it on a coordinate plane (maybe in a different color, if you have it).  What is ? Describe it in terms of the coordinate plane (may be hard to draw).  The vector is in . Can you interpret it in the context of the pictures you have drawn?  If , what is ? How does it compare to ?    Let and .  What is ? Draw it on a coordinate plane.  What is ? Draw it on a coordinate plane (maybe in a different color, if you have it).  What is ? Draw it on the coordinate plane.  How does this differ from in ? What is it about and that changes the outcome?   One of the major properties of real vectors in is that we can add them together and scale them the same way we do real numbers. If a smaller space inside of also has these properties, it has a special name.   A subspace of is a subset of that satisfies the following three properties:    is in .    If and are in , then so is .    If is in , then so is for any real number .        For each of the following collections of vectors, check each criterion from to see if that collection is a subspace.  If you think a criterion is true , justify it without resorting to specific examples .  If you think a criterion is false , provide an explicit example that demonstrates its failure .     In : All points on the line .  All points on the line .  All points on the circle of radius 1 centered at the origin.   In : All points on the -plane.  The plane parallel to the -plane at height .  All column vectors that satisfy the matrix equation , where is some fixed matrix.  .     "
+},
+{
+  "id": "activity-linear-combinations-refresher",
+  "level": "2",
+  "url": "worksheet-lin-span-subspaces.html#activity-linear-combinations-refresher",
+  "type": "Activity",
+  "number": "14.1.1",
+  "title": "",
+  "body": "  Recall or learn that a vector is a linear combination of vectors if you can write as a sum of scalar multiples of , i.e. if you can find scalars so that These are called coefficients , or sometimes weights .   Let and .  Is a linear combination of and ?  Is a linear combination of and ?  Can you identify which vectors in can be written as a linear combination of and ? Which vectors cannot be written as a linear combination of and ?  For any vectors that can be written as a linear combination of and , determine which coefficients need to be used.  "
+},
+{
+  "id": "worksheet-lin-span-subspaces-3",
+  "level": "2",
+  "url": "worksheet-lin-span-subspaces.html#worksheet-lin-span-subspaces-3",
+  "type": "Definition",
+  "number": "14.1.2",
+  "title": "",
+  "body": "The collection of all possible linear combinations of a set of vectors is called the span of those vectors, denoted  "
+},
+{
+  "id": "activity-span-as-a-word",
+  "level": "2",
+  "url": "worksheet-lin-span-subspaces.html#activity-span-as-a-word",
+  "type": "Activity",
+  "number": "14.1.3",
+  "title": "",
+  "body": " What is for and from ? (You already computed it in the previous exercise! You're just trying new vocab on.)  "
+},
+{
+  "id": "activity-span-geometrically",
+  "level": "2",
+  "url": "worksheet-lin-span-subspaces.html#activity-span-geometrically",
+  "type": "Activity",
+  "number": "14.1.4",
+  "title": "",
+  "body": " Let and .  What is ? Draw it on a coordinate plane.  What is ? Draw it on a coordinate plane (maybe in a different color, if you have it).  What is ? Describe it in terms of the coordinate plane (may be hard to draw).  The vector is in . Can you interpret it in the context of the pictures you have drawn?  If , what is ? How does it compare to ?  "
+},
+{
+  "id": "activity-span-geometrically-degenerate",
+  "level": "2",
+  "url": "worksheet-lin-span-subspaces.html#activity-span-geometrically-degenerate",
+  "type": "Activity",
+  "number": "14.1.5",
+  "title": "",
+  "body": " Let and .  What is ? Draw it on a coordinate plane.  What is ? Draw it on a coordinate plane (maybe in a different color, if you have it).  What is ? Draw it on the coordinate plane.  How does this differ from in ? What is it about and that changes the outcome?  "
+},
+{
+  "id": "definition-subspace",
+  "level": "2",
+  "url": "worksheet-lin-span-subspaces.html#definition-subspace",
+  "type": "Definition",
+  "number": "14.1.6",
+  "title": "",
+  "body": " A subspace of is a subset of that satisfies the following three properties:    is in .    If and are in , then so is .    If is in , then so is for any real number .     "
+},
+{
+  "id": "activity-subspaces-in-Rn",
+  "level": "2",
+  "url": "worksheet-lin-span-subspaces.html#activity-subspaces-in-Rn",
+  "type": "Activity",
+  "number": "14.1.7",
+  "title": "",
+  "body": "  For each of the following collections of vectors, check each criterion from to see if that collection is a subspace.  If you think a criterion is true , justify it without resorting to specific examples .  If you think a criterion is false , provide an explicit example that demonstrates its failure .     In : All points on the line .  All points on the line .  All points on the circle of radius 1 centered at the origin.   In : All points on the -plane.  The plane parallel to the -plane at height .  All column vectors that satisfy the matrix equation , where is some fixed matrix.  .    "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
