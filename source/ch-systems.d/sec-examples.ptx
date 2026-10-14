@@ -165,7 +165,7 @@ and finally can substitute both of these values into the first equation to deter
 <title>A look ahead</title>
 <p>
 In
-<xref ref="chapter-row-red" />,
+<xref ref="ch-row-red" />,
 we will develop a systematic method of simplifying a system in this manner, but working exclusively with augmented matrices.
 Also, we will take the process a few steps further to make the system as simple as possible.
 Notice how <q>back-solving</q> the system proceeds from bottom-right to top-left.
