@@ -61,11 +61,11 @@ respective owners.
         </p></statement></task>
 </activity>        
 
-    <definition><statement>
+    <definition><p>
         The collection of <em>all possible linear combinations</em> of a set of vectors
         is called the <term>span</term> of those vectors, denoted
         <md>\spn\{\bfv_{1}, \bfv_{2}, \ldots, \bfv_{n}\} = \{ c_{1} \bfv_{1} + c_{2} \bfv_{2} + \cdots + c_{n} \bfv_{n} \mid c_{i} \in \bbR \}.</md>
-    </statement></definition>
+    </p></definition>
 
 
 <activity xml:id="activity-span-as-a-word"> 
@@ -141,11 +141,45 @@ respective owners.
     <task><statement><p>
         How does this differ from <m>\spn\{\bfu_{1}, \bfu_2\}</m>
         in <xref ref="activity-span-geometrically"/>? 
-        What is it about <m>\bfw_1</m> and <m>/bfw_2</m> 
+        What is it about <m>\bfw_1</m> and <m>\bfw_2</m> 
         that changes the outcome? 
     </p></statement></task>
 
 </activity>
+
+<p>
+    One of the major properties of real vectors in <m>\bbR^{n}</m> is that we
+    can add them together and scale them the same way we do real numbers.
+    If a smaller space inside of <m>\bbR^{n}</m> also has these properties, it
+    has a special name.
+</p>
+
+<definition xml:id="definition-subspace">
+    <p>A subspace of <m>\bbR^{n}</m> is a subset <m>H</m> of <m>\bbR^{n}</m> that
+    satisfies the following three properties:</p>
+    <ol marker="(i)">
+        <li>
+            <p>
+            <m>\bfzero</m> is in <m>H</m>.
+            </p>
+        </li>
+
+        <li>
+            <p>
+            If <m>\bfu</m> and <m>\bfv</m> are in <m>H</m>, then so is
+            <m>\bfu + \bfv</m>.
+            </p>
+        </li>
+
+        <li>
+            <p>
+            If <m>\bfu</m> is in <m>H</m>, then so is <m>r \bfu</m> for any
+            real number <m>r</m>.
+            </p>
+        </li>
+    </ol>
+</definition>
+
 
 
 
