@@ -180,6 +180,6 @@ respective owners.
 <xi:include href="./sec-exercises.d/convert-augmatrix-to-sys.ptx" />
 
 <!-- Exercise group -->
-<xi:include href="./sec-exercises.d/rowops.ptx" />
+<xi:include href="./sec-exercises.d/row-ops.ptx" />
 
 </exercises>
