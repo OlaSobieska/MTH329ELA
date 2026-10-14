@@ -20,9 +20,9 @@ respective owners.
 
 <p>Content!</p>
 
-<!--<xi:include href="./ch-applications.d/discovery.ptx" />
-<xi:include href="./ch-applications.d/examples.ptx" />
-<xi:include href="./ch-applications.d/terminology.ptx" />
-<xi:include href="./ch-applications.d/theory.ptx" /> -->
+<!--<xi:include href="./ch-applications.d/sec-discovery.ptx" />
+<xi:include href="./ch-applications.d/sec-examples.ptx" />
+<xi:include href="./ch-applications.d/sec-terminology.ptx" />
+<xi:include href="./ch-applications.d/sec-theory.ptx" /> -->
 
 </chapter>

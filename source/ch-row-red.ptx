@@ -20,12 +20,12 @@ respective owners.
 
 <p>Content!</p>
 
-<!-- <xi:include href="./ch-row-red.d/discovery.ptx" />
-<xi:include href="./ch-row-red.d/terminology.ptx" />
-<xi:include href="./ch-row-red.d/concepts.ptx" />
-<xi:include href="./ch-row-red.d/examples.ptx" />
-<xi:include href="./ch-row-red.d/theory.ptx" />
-<xi:include href="./ch-row-red.d/exercises.ptx" />
-<xi:include href="./ch-row-red.d/reflections.ptx" /> -->
+<!-- <xi:include href="./ch-row-red.d/sec-discovery.ptx" />
+<xi:include href="./ch-row-red.d/sec-terminology.ptx" />
+<xi:include href="./ch-row-red.d/sec-concepts.ptx" />
+<xi:include href="./ch-row-red.d/sec-examples.ptx" />
+<xi:include href="./ch-row-red.d/sec-theory.ptx" />
+<xi:include href="./ch-row-red.d/sec-exercises.ptx" />
+<xi:include href="./ch-row-red.d/sec-reflections.ptx" /> -->
 
 </chapter>
