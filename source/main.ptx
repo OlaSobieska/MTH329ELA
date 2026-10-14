@@ -25,6 +25,7 @@
     <xi:include href="./ch-vectors.ptx" />
 	  <xi:include href="./ch-vector-geom.ptx" />
 	  <xi:include href="./ch-orthog.ptx" />
+    <xi:include href="./ch-lin-span-subspaces.ptx" />
 
     <!-- Include backmatter -->
     <xi:include href="./backmatter.ptx" />

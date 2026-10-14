@@ -20,6 +20,26 @@
     \newcommand{\bbZ}{\mathbb Z}
     \newcommand{\bbQ}{\mathbb Q}
     \newcommand{\bbR}{\mathbb R}
+    \newcommand{\RR}{\mathbb R}
+
+    <!--math boldface-->
+
+    \newcommand{\bfa}{{\mathbf{a}}}
+    \newcommand{\bfb}{{\mathbf{b}}}
+    \newcommand{\bfc}{{\mathbf{c}}}
+    \newcommand{\bfd}{{\mathbf{d}}}
+    \newcommand{\bfe}{{\mathbf{e}}}
+    \newcommand{\bfi}{{\mathbf{i}}}
+    \newcommand{\bfj}{{\mathbf{j}}}
+    \newcommand{\bfk}{{\mathbf{k}}}
+    \newcommand{\bfu}{{\mathbf{u}}}
+    \newcommand{\bfv}{{\mathbf{v}}}
+    \newcommand{\bfw}{{\mathbf{w}}}
+    \newcommand{\bfx}{{\mathbf{x}}}
+    \newcommand{\bfy}{{\mathbf{y}}}
+    \newcommand{\bfz}{{\mathbf{z}}}
+    \newcommand{\bfzero}{{\mathbf{0}}}
+    \newcommand{\bfone}{{\mathbf{1}}}
 
     \newenvironment{sysofeqns}[1]
     {\left\{\begin{array}{#1}}
@@ -32,6 +52,12 @@
     \newenvironment{avmatrix}[1]
     {\left\lvert\begin{array}{#1}}
     {\end{array}\right\rvert}
+
+    \newcommand{\twovec}[2]
+    {{\left[ \begin{array}{r} #1 \\ #2 \end{array} \right]}}
+    
+    \newcommand{\threevec}[3]
+    {{\left[ \begin{array}{r} #1 \\ #2 \\ #3 \end{array} \right]}}
   </macros>
 
   <!-- If you put any latex-image elements you can include preambles -->
