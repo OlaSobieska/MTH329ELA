@@ -13,7 +13,15 @@
 
     <!-- Include chapters -->
     <xi:include href="./ch-systems.ptx" />
-    <!-- <xi:include href="./ch-row-red.ptx" /> -->
+    <xi:include href="./ch-row-red.ptx" />
+    <xi:include href="./ch-applications.ptx" />
+	  <xi:include href="./ch-matrix-ops.ptx" />
+	  <xi:include href="./ch-inverses.ptx" />
+	  <xi:include href="./ch-elem-matrices.ptx" />
+	  <xi:include href="./ch-special-forms.ptx" />
+	  <xi:include href="./ch-det.ptx" />
+	  <xi:include href="./ch-det-by-row-red.ptx" />
+	  <xi:include href="./ch-more-det.ptx" />
 
     <!-- Include backmatter -->
     <xi:include href="./backmatter.ptx" />

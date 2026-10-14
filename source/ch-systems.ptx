@@ -14,7 +14,7 @@ respective owners.
 *********************************************************************-->
 
 
-<chapter xml:id="chapter-systems" xmlns:xi="http://www.w3.org/2001/XInclude">
+<chapter xml:id="ch-systems" xmlns:xi="http://www.w3.org/2001/XInclude">
 
 <title>Systems of linear equations</title>
 
@@ -22,5 +22,7 @@ respective owners.
 <xi:include href="./ch-systems.d/sec-terminology.ptx" />
 <xi:include href="./ch-systems.d/sec-concepts.ptx" />
 <xi:include href="./ch-systems.d/sec-examples.ptx" />
+<xi:include href="./ch-systems.d/sec-exercises.ptx" />
+<xi:include href="./ch-systems.d/sec-reflections.ptx" />
 
 </chapter>

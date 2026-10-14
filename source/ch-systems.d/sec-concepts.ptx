@@ -125,7 +125,7 @@ that there are different possibilities for the number of different solutions a p
 
 <p>
 We will prove in
-<xref ref="chapter-matrix-ops" />
+<xref ref="ch-matrix-ops" />
 (<xref ref="theorem-matrix-ops-sys-num-solutions" />)
 that for <em>every</em> system there are in fact only these three possibilities as encountered in
 <xref ref="worksheet-systems" />.
