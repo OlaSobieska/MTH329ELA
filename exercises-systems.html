@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Exercises</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="_static/pretext/fonts/material-symbols-outlined.css">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<style>
+@counter-style ptx-marker-1 { system: extends lower-roman; prefix: '('; suffix: ') '; }
+</style>
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+lang: "en-US",
+});
+</script><script defer data-pretext-mathjax="true" onerror="this.dataset.loadFailed = 'true';" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta name="twitter:title" content="Elementary Linear Algebra">
+<meta property="og:title" content="Elementary Linear Algebra">
+<meta property="book:title" content="Elementary Linear Algebra">
+<meta name="twitter:description" content="MTH 329">
+<meta property="og:description" content="MTH 329">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.55"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.55"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.3.5';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.3adcbea95009347b.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.7a45395f326e122c.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.9963089870a016c8.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner"><div class="title-container">
+<div class="heading ptx-banner-heading"><a href="my-great-book.html"><span class="title">Elementary Linear Algebra</span> <span class="subtitle">MTH 329</span></a></div>
+<p class="byline">Aleksandra Sobieska</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
+</div>
+<span class="nav-other-controls"><button id="ptx-read-aloud-button" class="ptx-read-aloud-button button" title="Read aloud" aria-expanded="false"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf1bc;</span><span class="name">Read aloud</span></button><div id="ptx-read-aloud-player" class="ptx-read-aloud-player" hidden="hidden" role="group" aria-label="Read aloud">
+<button id="ptx-read-aloud-prev" class="button" title="Previous sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe045;</span></button><button id="ptx-read-aloud-toggle" class="ptx-read-aloud-toggle button" title="Play"><span class="ptx-read-aloud-icon-play"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></span><span class="ptx-read-aloud-icon-pause"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe034;</span></span></button><button id="ptx-read-aloud-next" class="button" title="Next sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe044;</span></button><a id="ptx-read-aloud-continue" class="ptx-read-aloud-continue button" hidden="hidden">Continue<span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></a><button id="ptx-read-aloud-settings-button" class="ptx-read-aloud-settings-button button" title="Reading settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe429;</span></button>
+</div>
+<dialog class="ptx-dialog ptx-read-aloud-settings-popup" id="ptx-read-aloud-settings-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Read aloud settings</h2>
+<button class="ptx-read-aloud-settings-close-button button" id="ptx-read-aloud-settings-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label for="ptx-read-aloud-voice"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe91f;</span><span>Voice</span></label><select id="ptx-read-aloud-voice"></select><label class="ptx-readability-slider-label" for="ptx-read-aloud-rate"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe9e4;</span><span>Reading speed</span><output id="ptx-read-aloud-rate-value" for="ptx-read-aloud-rate">1×</output></label><input type="range" id="ptx-read-aloud-rate" min="0.5" max="2" step="0.1" value="1"><label for="ptx-read-aloud-asides"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d7;</span><span>Collapsed content</span></label><select id="ptx-read-aloud-asides"><option value="skip">Announce, do not read</option>
+<option value="read">Read automatically</option></select><label for="ptx-read-aloud-autoscroll"><input type="checkbox" id="ptx-read-aloud-autoscroll" checked><span>Follow along (auto-scroll)</span></label><label for="ptx-read-aloud-autocontinue"><input type="checkbox" id="ptx-read-aloud-autocontinue"><span>Continue to the next page automatically</span></label>
+</div></dialog><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="section-systems-examples.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-systems.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="reflections-systems.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\bbN}{\mathbb N}
+\newcommand{\bbZ}{\mathbb Z}
+\newcommand{\bbQ}{\mathbb Q}
+\newcommand{\bbR}{\mathbb R}
+
+\newenvironment{sysofeqns}[1]
+{\left\{\begin{array}{#1}}
+{\end{array}\right.}
+
+\newenvironment{abmatrix}[1]
+{\left[\begin{array}{#1}}
+{\end{array}\right]}
+
+\newenvironment{avmatrix}[1]
+{\left\lvert\begin{array}{#1}}
+{\end{array}\right\rvert}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-systems.html" class="internal"><span class="codenumber">1</span> <span class="title">Systems of linear equations</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-ch-systems">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-systems.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Discovery guide</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-systems-terminology.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Terminology and notation</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-systems-concepts.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Concepts</span></a></div>
+<ul id="ptx-toc-group-section-systems-concepts" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-systems-concepts.html#subsection-systems-concepts-solutions" class="internal"><span class="codenumber">1.3.1</span> <span class="title">System solutions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-systems-concepts.html#subsection-systems-concepts-determining-solutions" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Determining solutions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-systems-examples.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Examples</span></a></div>
+<ul id="ptx-toc-group-section-systems-examples" class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-systems-examples.html#subsection-systems-examples-row-ops-vs-equations" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Row operations versus equation manipulations</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-exercises active"><div class="toc-title-box"><a href="exercises-systems.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-reading-questions"><div class="toc-title-box"><a href="reflections-systems.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Reflect on your understanding</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-row-red.html" class="internal"><span class="codenumber">2</span> <span class="title">Solving systems using matrices</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-applications.html" class="internal"><span class="codenumber">3</span> <span class="title">Using systems of equations</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-matrix-ops.html" class="internal"><span class="codenumber">4</span> <span class="title">Matrices and matrix operations</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-inverses.html" class="internal"><span class="codenumber">5</span> <span class="title">Matrix inverses</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-elem-matrices.html" class="internal"><span class="codenumber">6</span> <span class="title">Elementary matrices</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-special-forms.html" class="internal"><span class="codenumber">7</span> <span class="title">Special forms of square matrices</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-det.html" class="internal"><span class="codenumber">8</span> <span class="title">Determinants</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-det-by-row-red.html" class="internal"><span class="codenumber">9</span> <span class="title">Determinants versus row operations</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-more-det.html" class="internal"><span class="codenumber">10</span> <span class="title">Determinants, the adjoint, and inverses</span></a></div></li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="exercises" id="exercises-systems">
+<h1 class="heading hide-type">
+<span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
+</h1>
+<article class="exercise exercise-like" id="exercise-systems-recognize-linear"><h2 class="heading">
+<span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Recognizing linear equations.</span>
+</h2>
+<div class="para logical" id="exercise-systems-recognize-linear-2-1">
+<div class="para">Which of the following is a <dfn class="terminology"><code class="code-inline tex2jax_ignore">[cross-reference to target(s) "definition-systems-linear-eqn" missing or not unique]</code></dfn>?</div>
+<ol class="decimal cols2 multicolumn" id="exercise-systems-recognize-linear-2-1-2">
+<li id="exercise-systems-recognize-linear-yes">
+<div class="para" id="p-derived-exercise-systems-recognize-linear-yes"><span class="process-math">\(\displaystyle 2 a + 3 b - 6 c = 5 \)</span></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.1.1"><a tabindex="-1" href="#exercise-systems-recognize-linear-yes" title="Copy heading and permalink for Item 1.5.1.1" aria-label="Copy heading and permalink for Item 1.5.1.1">🔗</a></div>
+</li>
+<li id="exercise-systems-recognize-linear-square">
+<div class="para" id="p-derived-exercise-systems-recognize-linear-square"><span class="process-math">\(\displaystyle 2 a^2 + 3 b - 6 c = 5 \)</span></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.1.2"><a tabindex="-1" href="#exercise-systems-recognize-linear-square" title="Copy heading and permalink for Item 1.5.1.2" aria-label="Copy heading and permalink for Item 1.5.1.2">🔗</a></div>
+</li>
+<li id="exercise-systems-recognize-linear-rearrange-then-yes">
+<div class="para" id="p-derived-exercise-systems-recognize-linear-rearrange-then-yes"><span class="process-math">\(\displaystyle 2 a = 5 - 3 b + 6 c \)</span></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.1.3"><a tabindex="-1" href="#exercise-systems-recognize-linear-rearrange-then-yes" title="Copy heading and permalink for Item 1.5.1.3" aria-label="Copy heading and permalink for Item 1.5.1.3">🔗</a></div>
+</li>
+<li id="exercise-systems-recognize-linear-parameter">
+<div class="para" id="p-derived-exercise-systems-recognize-linear-parameter"><span class="process-math">\(\displaystyle w + 2 x + 3 t y + 4 z = 0 \)</span></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.1.4"><a tabindex="-1" href="#exercise-systems-recognize-linear-parameter" title="Copy heading and permalink for Item 1.5.1.4" aria-label="Copy heading and permalink for Item 1.5.1.4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise-systems-recognize-linear-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercise-systems-recognize-linear-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="exercise-systems-recognize-linear-3-1">Equations <a href="exercises-systems.html#exercise-systems-recognize-linear-yes" class="xref" data-knowl="./knowl/xref/exercise-systems-recognize-linear-yes.html" data-reveal-label="Reveal" data-close-label="Close" title="Item 1.5.1.1">1</a> and <a href="exercises-systems.html#exercise-systems-recognize-linear-rearrange-then-yes" class="xref" data-knowl="./knowl/xref/exercise-systems-recognize-linear-rearrange-then-yes.html" data-reveal-label="Reveal" data-close-label="Close" title="Item 1.5.1.3">3</a> are linear, though we would typically rearrange the equation in <a href="exercises-systems.html#exercise-systems-recognize-linear-rearrange-then-yes" class="xref" data-knowl="./knowl/xref/exercise-systems-recognize-linear-rearrange-then-yes.html" data-reveal-label="Reveal" data-close-label="Close" title="Item 1.5.1.3">3</a> so that all unknowns appear on the left-hand side. Equation <a href="exercises-systems.html#exercise-systems-recognize-linear-square" class="xref" data-knowl="./knowl/xref/exercise-systems-recognize-linear-square.html" data-reveal-label="Reveal" data-close-label="Close" title="Item 1.5.1.2">2</a> is not linear because of the degree-<span class="process-math">\(2\)</span> term <span class="process-math">\(2 a^2\text{.}\)</span> Whether equation <a href="exercises-systems.html#exercise-systems-recognize-linear-parameter" class="xref" data-knowl="./knowl/xref/exercise-systems-recognize-linear-parameter.html" data-reveal-label="Reveal" data-close-label="Close" title="Item 1.5.1.4">4</a> is considered linear or not depends on our perspective: we would probably consider <span class="process-math">\(w\text{,}\)</span> <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(y\text{,}\)</span> and <span class="process-math">\(z\)</span> to be unknowns, but what is the status of <span class="process-math">\(t\text{?}\)</span> If the role of <span class="process-math">\(t\)</span> is also to be an unknown, then the equation is not linear because of the degree-<span class="process-math">\(2\)</span> term <span class="process-math">\(3 t y\text{.}\)</span> But if the role of <span class="process-math">\(t\)</span> is as an unspecified constant value, then the equation is linear in the other four variables.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise-systems-recognize-linear-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.5.1.1"><a tabindex="-1" href="#exercise-systems-recognize-linear-3" title="Copy heading and permalink for Answer 1.5.1.1" aria-label="Copy heading and permalink for Answer 1.5.1.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1.5.1: Recognizing linear equations"><a tabindex="-1" href="#exercise-systems-recognize-linear" title="Copy heading and permalink for Exercise 1.5.1: Recognizing linear equations" aria-label="Copy heading and permalink for Exercise 1.5.1: Recognizing linear equations">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercises-systems-3"><h2 class="heading">
+<span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Testing equation solutions.</span>
+</h2>
+<div class="introduction" id="exercises-systems-3-2">
+<div class="para logical" id="exercises-systems-3-2-1">
+<div class="para">For each collection of variable values, determine whether it constitutes a <dfn class="terminology"><code class="code-inline tex2jax_ignore">[cross-reference to target(s) "definition-systems-solution" missing or not unique]</code></dfn> of the linear equation</div>
+<div class="displaymath process-math" data-contains-math-knowls="" id="exercises-systems-3-2-1-2">
+\begin{equation*}
+-4 x + y + 9 z = 3\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="exercises-systems-3-3"><h3 class="heading"><span class="codenumber">(a)</span></h3>
+<div class="para" id="exercises-systems-3-3-1-1">
+<span class="process-math">\(x = 2, y = 2, z = 1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercises-systems-3-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="exercises-systems-3-3-2-1">
+<div class="para">Substitute the variable values into the left-hand side of the equation and compute</div>
+<div class="displaymath process-math" id="exercises-systems-3-3-2-1-1">
+\begin{align*}
+\textrm{LHS} \amp = -4 x + y + 9 z \\
+\amp = -4 \cdot 2 + 2 + 9 \cdot 1 \\
+\amp = -8 + 2 + 9 \\
+\amp = 3 \\
+\amp = \textrm{RHS} \text{.}
+\end{align*}
+</div>
+<div class="para">As this collection of variable values satisfy the equation, it does constitute a solution of the equation.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-3-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.5.2.a.1"><a tabindex="-1" href="#exercises-systems-3-3-2" title="Copy heading and permalink for Solution 1.5.2.a.1" aria-label="Copy heading and permalink for Solution 1.5.2.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.5.2.a"><a tabindex="-1" href="#exercises-systems-3-3" title="Copy heading and permalink for Task 1.5.2.a" aria-label="Copy heading and permalink for Task 1.5.2.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="exercises-systems-3-4"><h3 class="heading"><span class="codenumber">(b)</span></h3>
+<div class="para" id="exercises-systems-3-4-1-1">
+<span class="process-math">\(x = 1, y = -2, z = 2\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercises-systems-3-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="exercises-systems-3-4-2-1">
+<div class="para">Substitute the variable values into the left-hand side of the equation and compute</div>
+<div class="displaymath process-math" id="exercises-systems-3-4-2-1-1">
+\begin{align*}
+\textrm{LHS} \amp = -4 x + y + 9 z \\
+\amp = -4 \cdot 1 + (-2) + 9 \cdot 2 \\
+\amp = -4 - 2 + 18 \\
+\amp = 12 \\
+\amp \neq \textrm{RHS} \text{.}
+\end{align*}
+</div>
+<div class="para">As this collection of variable values does not satisfy the equation, it does not constitute a solution of the equation.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-3-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.5.2.b.1"><a tabindex="-1" href="#exercises-systems-3-4-2" title="Copy heading and permalink for Solution 1.5.2.b.1" aria-label="Copy heading and permalink for Solution 1.5.2.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.5.2.b"><a tabindex="-1" href="#exercises-systems-3-4" title="Copy heading and permalink for Task 1.5.2.b" aria-label="Copy heading and permalink for Task 1.5.2.b">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Exercise 1.5.2: Testing equation solutions"><a tabindex="-1" href="#exercises-systems-3" title="Copy heading and permalink for Exercise 1.5.2: Testing equation solutions" aria-label="Copy heading and permalink for Exercise 1.5.2: Testing equation solutions">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercises-systems-4"><h2 class="heading">
+<span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Testing system solutions.</span>
+</h2>
+<div class="introduction" id="exercises-systems-4-2">
+<div class="para logical" id="exercises-systems-4-2-1">
+<div class="para">For each collection of variable values, determine whether it constitutes a <dfn class="terminology"><code class="code-inline tex2jax_ignore">[cross-reference to target(s) "definition-systems-solution" missing or not unique]</code></dfn> of the system of linear equations</div>
+<div class="displaymath process-math" data-contains-math-knowls="" id="exercises-systems-4-2-1-2">
+\begin{equation*}
+\begin{sysofeqns}{rcrcrcr}
+-4 x \amp + \amp   y \amp + \amp 9 z \amp = \amp  3, \\
+3 x \amp - \amp 4 y \amp - \amp 4 z \amp = \amp -6, \\
+x \amp - \amp   y \amp + \amp 2 z \amp = \amp 2
+\end{sysofeqns}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="exercises-systems-4-2-2" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Aside<span class="colon heading-divison-mark heading-divison-mark__colon">:</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Note.</span>
+</h3></summary>
+<aside class="aside aside-like knowl__content">
+<div class="para" id="exercises-systems-4-2-2-2">It is not necessary to <em class="emphasis">solve</em> the system of equations in order to <em class="emphasis">test</em> potential solutions.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-4-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</aside></details>
+</div>
+<article class="task exercise-like" id="exercises-systems-4-3"><h3 class="heading"><span class="codenumber">(a)</span></h3>
+<div class="para" id="exercises-systems-4-3-1-1">
+<span class="process-math">\(x = 2, y = 2, z = 1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercises-systems-4-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="exercises-systems-4-3-2-1">
+<div class="para">Substitute the variable values into each of the left-hand side of the equations and compute</div>
+<div class="displaymath process-math" id="exercises-systems-4-3-2-1-1">
+\begin{align*}
+\textrm{LHS}_1 \amp = -4 x + y + 9 z \\
+\amp = -4 \cdot 2 + 2 + 9 \cdot 1 \\
+\amp = -8 + 2 + 9 \\
+\amp = 3 \\
+\amp = \textrm{RHS}_1 \text{,}
+\end{align*}
+</div>
+<div class="displaymath process-math" id="exercises-systems-4-3-2-1-2">
+\begin{align*}
+\textrm{LHS}_2 \amp = 3 x - 4 y - 4 z \\
+\amp = 3 \cdot 2 - 4 \cdot 2 - 4 \cdot 1 \\
+\amp = 6 - 8 - 4 \\
+\amp = -6 \\
+\amp = \textrm{RHS}_2 \text{,}
+\end{align*}
+</div>
+<div class="displaymath process-math" id="exercises-systems-4-3-2-1-3">
+\begin{align*}
+\textrm{LHS}_3 \amp = x - y + 2 z \\
+\amp = 2 - 2 + 2 \cdot 1 \\
+\amp = 0 + 2 \\
+\amp = 2 \\
+\amp = \textrm{RHS}_3 \text{.}
+\end{align*}
+</div>
+<div class="para">As this collection of variable values simultaneously satisfies all equations in the system, it does constitute a solution of the system.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-4-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.5.3.a.1"><a tabindex="-1" href="#exercises-systems-4-3-2" title="Copy heading and permalink for Solution 1.5.3.a.1" aria-label="Copy heading and permalink for Solution 1.5.3.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.5.3.a"><a tabindex="-1" href="#exercises-systems-4-3" title="Copy heading and permalink for Task 1.5.3.a" aria-label="Copy heading and permalink for Task 1.5.3.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="exercises-systems-4-4"><h3 class="heading"><span class="codenumber">(b)</span></h3>
+<div class="para" id="exercises-systems-4-4-1-1">
+<span class="process-math">\(x = -2, y = 4, z = -1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercises-systems-4-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="exercises-systems-4-4-2-1">
+<div class="para">Substitute the variable values into each of the left-hand side of the equations and compute</div>
+<div class="displaymath process-math" id="exercises-systems-4-4-2-1-1">
+\begin{align*}
+\textrm{LHS}_1 \amp = -4 x + y + 9 z \\
+\amp = -4 \cdot (-2) + 4 + 9 \cdot (-1) \\
+\amp = 8 + 4 - 9 \\
+\amp = 3 \\
+\amp = \textrm{RHS}_1 \text{,}
+\end{align*}
+</div>
+<div class="displaymath process-math" id="exercises-systems-4-4-2-1-2">
+\begin{align*}
+\textrm{LHS}_2 \amp = 3 x - 4 y - 4 z \\
+\amp = 3 \cdot (-2) - 4 \cdot 4 - 4 \cdot (-1) \\
+\amp = -6 - 16 + 4 \\
+\amp = -18 \\
+\amp \neq \textrm{RHS}_2 \text{.}
+\end{align*}
+</div>
+<div class="para">There is no need to continue on to the third equation, as we may already conclude that this collection of variable values does not simultaneously satisfy all equations in the system. Therefore, it does not constitute a solution of the system.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-4-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.5.3.b.1"><a tabindex="-1" href="#exercises-systems-4-4-2" title="Copy heading and permalink for Solution 1.5.3.b.1" aria-label="Copy heading and permalink for Solution 1.5.3.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.5.3.b"><a tabindex="-1" href="#exercises-systems-4-4" title="Copy heading and permalink for Task 1.5.3.b" aria-label="Copy heading and permalink for Task 1.5.3.b">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Exercise 1.5.3: Testing system solutions"><a tabindex="-1" href="#exercises-systems-4" title="Copy heading and permalink for Exercise 1.5.3: Testing system solutions" aria-label="Copy heading and permalink for Exercise 1.5.3: Testing system solutions">🔗</a></div>
+</article>
+<div class="exercisegroup" id="exercises-systems-5">
+<h2 class="heading"><span class="title">Guessing equation solutions.</span></h2>
+<div class="introduction" id="exercises-systems-5-2">
+<div class="para" id="exercises-systems-5-2-1">For each equation, determine four specific solutions.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<div class="exercisegroup-exercises cols2 multicolumn">
+<article class="exercise exercise-like" id="exercises-systems-5-3"><h3 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="exercises-systems-5-3-1-1">
+<span class="process-math">\(2 x + 3 y = 5 \)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercises-systems-5-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="exercises-systems-5-3-2-1">
+<div class="para">There are no restrictions on the value of the <span class="process-math">\(y\)</span> variable, so we may choose its value to be anything we like and then determine the corresponding <span class="process-math">\(x\)</span>-value. For example, when <span class="process-math">\(y = -1\)</span> we have</div>
+<div class="displaymath process-math" id="exercises-systems-5-3-2-1-4">
+\begin{align*}
+2 x + 3 \cdot (-1) \amp = 5 \\
+2 x - 3 \amp = 5 \\
+2 x \amp = 5 + 3 \\
+2 x \amp = 8 \\
+x \amp = 4 \text{.}
+\end{align*}
+</div>
+<div class="para">Thus <span class="process-math">\(x = 4, y = -1\)</span> is a specific solution to the equation. Here is a list of that solution and three others obtained by choosing other values for <span class="process-math">\(y\)</span> and then solving for the corresponding <span class="process-math">\(x\)</span> value, just as above.</div>
+<ol class="decimal cols2 multicolumn" id="exercises-systems-5-3-2-1-8">
+<li id="exercises-systems-5-3-2-1-8-1">
+<div class="para" id="p-derived-exercises-systems-5-3-2-1-8-1"><span class="process-math">\(\displaystyle x = 4, y = -1\)</span></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.4.1"><a tabindex="-1" href="#exercises-systems-5-3-2-1-8-1" title="Copy heading and permalink for Item 1.5.4.1" aria-label="Copy heading and permalink for Item 1.5.4.1">🔗</a></div>
+</li>
+<li id="exercises-systems-5-3-2-1-8-2">
+<div class="para" id="p-derived-exercises-systems-5-3-2-1-8-2"><span class="process-math">\(\displaystyle x = 1, y = 1\)</span></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.4.2"><a tabindex="-1" href="#exercises-systems-5-3-2-1-8-2" title="Copy heading and permalink for Item 1.5.4.2" aria-label="Copy heading and permalink for Item 1.5.4.2">🔗</a></div>
+</li>
+<li id="exercises-systems-5-3-2-1-8-3">
+<div class="para" id="p-derived-exercises-systems-5-3-2-1-8-3"><span class="process-math">\(\displaystyle x = 5 / 2, y = 0\)</span></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.4.3"><a tabindex="-1" href="#exercises-systems-5-3-2-1-8-3" title="Copy heading and permalink for Item 1.5.4.3" aria-label="Copy heading and permalink for Item 1.5.4.3">🔗</a></div>
+</li>
+<li id="exercises-systems-5-3-2-1-8-4">
+<div class="para" id="p-derived-exercises-systems-5-3-2-1-8-4"><span class="process-math">\(\displaystyle x = 2, y = 1/3\)</span></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.4.4"><a tabindex="-1" href="#exercises-systems-5-3-2-1-8-4" title="Copy heading and permalink for Item 1.5.4.4" aria-label="Copy heading and permalink for Item 1.5.4.4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-5-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="exercises-systems-5-3-2-2" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Aside<span class="colon heading-divison-mark heading-divison-mark__colon">:</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Remark.</span>
+</h4></summary>
+<aside class="aside aside-like knowl__content">
+<div class="para" id="exercises-systems-5-3-2-2-2">There was no particular reasoning behind our choices of values for <span class="process-math">\(y\text{,}\)</span> other than to keep the choices simple. Any real values could have been chosen.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-5-3-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</aside></details><div class="autopermalink" aria-hidden="true" data-description="Solution 1.5.4.1"><a tabindex="-1" href="#exercises-systems-5-3-2" title="Copy heading and permalink for Solution 1.5.4.1" aria-label="Copy heading and permalink for Solution 1.5.4.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1.5.4"><a tabindex="-1" href="#exercises-systems-5-3" title="Copy heading and permalink for Exercise 1.5.4" aria-label="Copy heading and permalink for Exercise 1.5.4">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercises-systems-5-4"><h3 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="exercises-systems-5-4-1-1">
+<span class="process-math">\(3 x - 4 y + z = -6 \)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-5-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercises-systems-5-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="exercises-systems-5-4-2-1">
+<div class="para">There are no restrictions on the value of either the <span class="process-math">\(y\)</span> or <span class="process-math">\(z\)</span> variable — we may choose any combination of values for these two variables and then determine the corresponding <span class="process-math">\(x\)</span>-value. For example, when <span class="process-math">\(y = 1\)</span> and <span class="process-math">\(z = 0\)</span> we have</div>
+<div class="displaymath process-math" id="exercises-systems-5-4-2-1-7">
+\begin{align*}
+3 x - 4 \cdot 1 + 0 \amp = -6 \\
+3 x - 4 \amp = -6 \\
+3 x \amp = -6 + 4 \\
+3 x \amp = -2 \\
+x \amp = - 2 / 3 \text{.}
+\end{align*}
+</div>
+<div class="para">Thus, <span class="process-math">\(x = - 2 / 3, y = 1, z = 0\)</span> is a specific solution to the equation. Here is a list of that solution and three others obtained by choosing other combinations of values for <span class="process-math">\(y\)</span> and <span class="process-math">\(z\)</span> and then solving for the corresponding <span class="process-math">\(x\)</span> value, just as above.</div>
+<ol class="decimal cols2 multicolumn" id="exercises-systems-5-4-2-1-12">
+<li id="exercises-systems-5-4-2-1-12-1">
+<div class="para" id="p-derived-exercises-systems-5-4-2-1-12-1"><span class="process-math">\(\displaystyle x = - 2 / 3, y = 1, z = 0\)</span></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.5.1"><a tabindex="-1" href="#exercises-systems-5-4-2-1-12-1" title="Copy heading and permalink for Item 1.5.5.1" aria-label="Copy heading and permalink for Item 1.5.5.1">🔗</a></div>
+</li>
+<li id="exercises-systems-5-4-2-1-12-2">
+<div class="para" id="p-derived-exercises-systems-5-4-2-1-12-2"><span class="process-math">\(\displaystyle x = -7 / 3, y = 0, z = 1\)</span></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.5.2"><a tabindex="-1" href="#exercises-systems-5-4-2-1-12-2" title="Copy heading and permalink for Item 1.5.5.2" aria-label="Copy heading and permalink for Item 1.5.5.2">🔗</a></div>
+</li>
+<li id="exercises-systems-5-4-2-1-12-3">
+<div class="para" id="p-derived-exercises-systems-5-4-2-1-12-3"><span class="process-math">\(\displaystyle x = -2, y = 0, z = 0\)</span></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.5.3"><a tabindex="-1" href="#exercises-systems-5-4-2-1-12-3" title="Copy heading and permalink for Item 1.5.5.3" aria-label="Copy heading and permalink for Item 1.5.5.3">🔗</a></div>
+</li>
+<li id="exercises-systems-5-4-2-1-12-4">
+<div class="para" id="p-derived-exercises-systems-5-4-2-1-12-4"><span class="process-math">\(\displaystyle x = -1, y = 1, z = 1\)</span></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.5.4"><a tabindex="-1" href="#exercises-systems-5-4-2-1-12-4" title="Copy heading and permalink for Item 1.5.5.4" aria-label="Copy heading and permalink for Item 1.5.5.4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-5-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="exercises-systems-5-4-2-2" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Aside<span class="colon heading-divison-mark heading-divison-mark__colon">:</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Remark.</span>
+</h4></summary>
+<aside class="aside aside-like knowl__content">
+<div class="para" id="exercises-systems-5-4-2-2-2">There was no particular reasoning behind our choices of combinations of values for <span class="process-math">\(y\)</span> and <span class="process-math">\(z\text{,}\)</span> other than to keep the choices simple. Any real values could have been chosen.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-5-4-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</aside></details><div class="autopermalink" aria-hidden="true" data-description="Solution 1.5.5.1"><a tabindex="-1" href="#exercises-systems-5-4-2" title="Copy heading and permalink for Solution 1.5.5.1" aria-label="Copy heading and permalink for Solution 1.5.5.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1.5.5"><a tabindex="-1" href="#exercises-systems-5-4" title="Copy heading and permalink for Exercise 1.5.5" aria-label="Copy heading and permalink for Exercise 1.5.5">🔗</a></div>
+</article>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise Group 1.5.4–5: Guessing equation solutions"><a tabindex="-1" href="#exercises-systems-5" title="Copy heading and permalink for Exercise Group 1.5.4–5: Guessing equation solutions" aria-label="Copy heading and permalink for Exercise Group 1.5.4–5: Guessing equation solutions">🔗</a></div>
+</div>
+<div class="exercisegroup" id="exercises-systems-6">
+<h2 class="heading"><span class="title">Solutions as geometric points of intersection.</span></h2>
+<div class="introduction" id="exercises-systems-6-2">
+<div class="para" id="exercises-systems-6-2-1">For each system of equations, use a graphing tool to graph the corresponding lines on the set same of axes. Use the plot to determine if the system is <dfn class="terminology"><code class="code-inline tex2jax_ignore">[cross-reference to target(s) "definition-systems-consistent" missing or not unique]</code></dfn> or <dfn class="terminology"><code class="code-inline tex2jax_ignore">[cross-reference to target(s) "definition-systems-inconsistent" missing or not unique]</code></dfn>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<div class="exercisegroup-exercises cols2 multicolumn">
+<article class="exercise exercise-like" id="exercises-systems-6-3"><h3 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="exercises-systems-6-3-1-1">
+<span class="process-math">\(\displaystyle
+\begin{sysofeqns}{rcrcr}
+x \amp + \amp 4 y \amp = \amp 6 \\
+x \amp - \amp 2 y \amp = \amp 0 \\
+3 x \amp + \amp y \amp = \amp 7
+\end{sysofeqns}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-6-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercises-systems-6-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:1.850000000000001%;margin-right:1.850000000000001%;grid-template-columns:33.852544132918% 62.3052959501558%;column-gap:3.700000000000003%;">
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/latex-image/exercises-systems-6-3-2-1-1.svg" role="img" class="contained" alt="Three lines intersecting at a single point in common."></div></div>
+<div class="sbspanel sbspanel--top top" style="">
+<div class="para" id="exercises-systems-6-3-2-1-2">The three lines intersect at a common point, and so the system is consistent. Your graphing tool may tell you that this common point is <span class="process-math">\((2,1)\text{,}\)</span> and you may verify that this is correct algebraically by confirming that <span class="process-math">\(x = 2, y = 1\)</span> constitutes a solution to the system.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-6-3-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.5.6.1"><a tabindex="-1" href="#exercises-systems-6-3-2" title="Copy heading and permalink for Solution 1.5.6.1" aria-label="Copy heading and permalink for Solution 1.5.6.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1.5.6"><a tabindex="-1" href="#exercises-systems-6-3" title="Copy heading and permalink for Exercise 1.5.6" aria-label="Copy heading and permalink for Exercise 1.5.6">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercises-systems-6-4"><h3 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="exercises-systems-6-4-1-1">
+<span class="process-math">\(\displaystyle
+\begin{sysofeqns}{rcrcr}
+x \amp - \amp   y \amp = \amp -2 \\
+2 x \amp + \amp   y \amp = \amp  5 \\
+x \amp + \amp 2 y \amp = \amp  1
+\end{sysofeqns}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-6-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercises-systems-6-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:1.875%;margin-right:1.875%;grid-template-columns:46.7532467532468% 49.3506493506493%;column-gap:3.75%;">
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/latex-image/exercises-systems-6-4-2-1-1.svg" role="img" class="contained" alt="Three intersecting lines that do not intersect at a single point in common."></div></div>
+<div class="sbspanel sbspanel--top top" style="">
+<div class="para" id="exercises-systems-6-4-2-1-2">While these lines intersect in pairs, there is no common point where all three intersect. Therefore, the system is inconsistent.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-6-4-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.5.7.1"><a tabindex="-1" href="#exercises-systems-6-4-2" title="Copy heading and permalink for Solution 1.5.7.1" aria-label="Copy heading and permalink for Solution 1.5.7.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1.5.7"><a tabindex="-1" href="#exercises-systems-6-4" title="Copy heading and permalink for Exercise 1.5.7" aria-label="Copy heading and permalink for Exercise 1.5.7">🔗</a></div>
+</article>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise Group 1.5.6–7: Solutions as geometric points of intersection"><a tabindex="-1" href="#exercises-systems-6" title="Copy heading and permalink for Exercise Group 1.5.6–7: Solutions as geometric points of intersection" aria-label="Copy heading and permalink for Exercise Group 1.5.6–7: Solutions as geometric points of intersection">🔗</a></div>
+</div>
+<div class="exercisegroup" id="exercises-systems-7">
+<h2 class="heading"><span class="title">Creating augmented matrices.</span></h2>
+<div class="introduction" id="exercises-systems-7-2">
+<div class="para" id="exercises-systems-7-2-1">Convert each system into an <dfn class="terminology"><code class="code-inline tex2jax_ignore">[cross-reference to target(s) "definition-systems-augmatrix" missing or not unique]</code></dfn>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<div class="exercisegroup-exercises cols2 multicolumn">
+<article class="exercise exercise-like" id="exercises-systems-7-3"><h3 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="exercises-systems-7-3-1-1">
+<span class="process-math">\(\displaystyle
+\begin{sysofeqns}{rcrcr}
+x \amp + \amp 3 y \amp = \amp 1 \\
+2 x \amp + \amp 7 y \amp = \amp 2
+\end{sysofeqns}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-7-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercises-systems-7-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="exercises-systems-7-3-2-1">
+<span class="process-math">\(\displaystyle
+\begin{abmatrix}{rr|r}
+1 \amp 3 \amp 1 \\
+2 \amp 7 \amp 2
+\end{abmatrix}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-7-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.5.8.1"><a tabindex="-1" href="#exercises-systems-7-3-2" title="Copy heading and permalink for Answer 1.5.8.1" aria-label="Copy heading and permalink for Answer 1.5.8.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1.5.8"><a tabindex="-1" href="#exercises-systems-7-3" title="Copy heading and permalink for Exercise 1.5.8" aria-label="Copy heading and permalink for Exercise 1.5.8">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercises-systems-7-4"><h3 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="exercises-systems-7-4-1-1">
+<span class="process-math">\(\displaystyle
+\begin{sysofeqns}{rcrcr}
+5 a \amp - \amp   b \amp = \amp  2 \\
+2 a \amp + \amp 6 b \amp = \amp  5 \\
+4 a \amp + \amp 3 b \amp = \amp -7
+\end{sysofeqns}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-7-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercises-systems-7-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="exercises-systems-7-4-2-1">
+<span class="process-math">\(\displaystyle
+\begin{abmatrix}{rr|r}
+5 \amp -1 \amp  2 \\
+2 \amp  6 \amp  5 \\
+4 \amp  3 \amp -7
+\end{abmatrix}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-7-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.5.9.1"><a tabindex="-1" href="#exercises-systems-7-4-2" title="Copy heading and permalink for Answer 1.5.9.1" aria-label="Copy heading and permalink for Answer 1.5.9.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1.5.9"><a tabindex="-1" href="#exercises-systems-7-4" title="Copy heading and permalink for Exercise 1.5.9" aria-label="Copy heading and permalink for Exercise 1.5.9">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercises-systems-7-5"><h3 class="heading"><span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="exercises-systems-7-5-1-1">
+<span class="process-math">\(\displaystyle
+\begin{sysofeqns}{rcrcrcr}
+x \amp - \amp 2 y \amp + \amp 2 z \amp = \amp  3 \\
+3 x \amp + \amp 2 y \amp - \amp 4 z \amp = \amp  4
+\end{sysofeqns}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-7-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercises-systems-7-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="exercises-systems-7-5-2-1">
+<span class="process-math">\(\displaystyle
+\begin{abmatrix}{rrr|r}
+1 \amp -2 \amp  2 \amp 3 \\
+3 \amp  2 \amp -4 \amp 4
+\end{abmatrix}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-7-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.5.10.1"><a tabindex="-1" href="#exercises-systems-7-5-2" title="Copy heading and permalink for Answer 1.5.10.1" aria-label="Copy heading and permalink for Answer 1.5.10.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1.5.10"><a tabindex="-1" href="#exercises-systems-7-5" title="Copy heading and permalink for Exercise 1.5.10" aria-label="Copy heading and permalink for Exercise 1.5.10">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercises-systems-7-6"><h3 class="heading"><span class="codenumber">11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="exercises-systems-7-6-1-1">
+<span class="process-math">\(\displaystyle
+\begin{sysofeqns}{rcrcrcr}
+5 x_1 \amp - \amp 3 x_2 \amp + \amp 2 x_3 \amp = \amp 2 \\
+x_1 \amp - \amp 2 x_2 \amp   \amp       \amp = \amp 4 \\
+-3 x_1 \amp - \amp 3 x_2 \amp + \amp 2 x_3 \amp = \amp 1
+\end{sysofeqns}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-7-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercises-systems-7-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="exercises-systems-7-6-2-1">
+<span class="process-math">\(\displaystyle
+\begin{abmatrix}{rrr|r}
+5 \amp -3 \amp 2 \amp 2 \\
+1 \amp -2 \amp 0 \amp 4 \\
+-3 \amp -3 \amp 2 \amp 1
+\end{abmatrix}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-7-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.5.11.1"><a tabindex="-1" href="#exercises-systems-7-6-2" title="Copy heading and permalink for Answer 1.5.11.1" aria-label="Copy heading and permalink for Answer 1.5.11.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1.5.11"><a tabindex="-1" href="#exercises-systems-7-6" title="Copy heading and permalink for Exercise 1.5.11" aria-label="Copy heading and permalink for Exercise 1.5.11">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercises-systems-7-7"><h3 class="heading"><span class="codenumber">12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="exercises-systems-7-7-1-1">
+<span class="process-math">\(\displaystyle
+\begin{sysofeqns}{rcrcrcrcr}
+2 w \amp + \amp x \amp + \amp   y \amp + \amp 9 z \amp = \amp  5 \\
+w \amp + \amp x \amp   \amp 2 y \amp - \amp 5 z \amp = \amp -4 \\
+\amp + \amp x \amp + \amp 4 y \amp + \amp 4 z \amp = \amp -5
+\end{sysofeqns}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-7-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercises-systems-7-7-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para" id="exercises-systems-7-7-2-1">
+<span class="process-math">\(\displaystyle
+\begin{abmatrix}{rrrr|r}
+2 \amp 1 \amp 1 \amp  9 \amp  5 \\
+1 \amp 1 \amp 2 \amp -5 \amp -4 \\
+0 \amp 1 \amp 4 \amp  4 \amp -5
+\end{abmatrix}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-7-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.5.12.1"><a tabindex="-1" href="#exercises-systems-7-7-2" title="Copy heading and permalink for Answer 1.5.12.1" aria-label="Copy heading and permalink for Answer 1.5.12.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1.5.12"><a tabindex="-1" href="#exercises-systems-7-7" title="Copy heading and permalink for Exercise 1.5.12" aria-label="Copy heading and permalink for Exercise 1.5.12">🔗</a></div>
+</article>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise Group 1.5.8–12: Creating augmented matrices"><a tabindex="-1" href="#exercises-systems-7" title="Copy heading and permalink for Exercise Group 1.5.8–12: Creating augmented matrices" aria-label="Copy heading and permalink for Exercise Group 1.5.8–12: Creating augmented matrices">🔗</a></div>
+</div>
+<div class="exercisegroup" id="exercises-systems-8">
+<h2 class="heading"><span class="title">Interpreting augmented matrices.</span></h2>
+<div class="introduction" id="exercises-systems-8-2">
+<div class="para" id="exercises-systems-8-2-1">For each matrix, write out a system of equations whose <dfn class="terminology"><code class="code-inline tex2jax_ignore">[cross-reference to target(s) "definition-systems-augmatrix" missing or not unique]</code></dfn> is the one given. Then determine the solution(s) to the system.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<div class="exercisegroup-exercises cols2 multicolumn">
+<article class="exercise exercise-like" id="exercises-systems-8-3"><h3 class="heading"><span class="codenumber">13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="exercises-systems-8-3-1-1">
+<span class="process-math">\(\displaystyle
+\begin{abmatrix}{rr|r}
+1 \amp 2 \amp 5 \\
+0 \amp 1 \amp 2
+\end{abmatrix}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-8-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercises-systems-8-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="exercises-systems-8-3-2-1">
+<div class="para">Using variables <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{,}\)</span> the corresponding system is</div>
+<div class="displaymath process-math" id="exercises-systems-8-3-2-1-3">
+\begin{equation*}
+\begin{sysofeqns}{rcrcr}
+x \amp + \amp 2 y \amp = \amp 5 \\
+\amp   \amp   y \amp = \amp 2
+\end{sysofeqns}\text{.}
+\end{equation*}
+</div>
+<div class="para">From the second equation, we immediately have <span class="process-math">\(y = 2\text{,}\)</span> and we can substitute that value into the first equation to obtain</div>
+<div class="displaymath process-math" id="exercises-systems-8-3-2-1-5">
+\begin{gather*}
+x + 2 y = 5 \\
+x + 2 \cdot 2 = 5 \\
+x + 4 = 5 \\
+x = 5 - 4 \\
+x = 1 \text{.}
+\end{gather*}
+</div>
+<div class="para">So the solution to the system is <span class="process-math">\(x = 1, y = 2\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-8-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.5.13.1"><a tabindex="-1" href="#exercises-systems-8-3-2" title="Copy heading and permalink for Solution 1.5.13.1" aria-label="Copy heading and permalink for Solution 1.5.13.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1.5.13"><a tabindex="-1" href="#exercises-systems-8-3" title="Copy heading and permalink for Exercise 1.5.13" aria-label="Copy heading and permalink for Exercise 1.5.13">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercises-systems-8-4"><h3 class="heading"><span class="codenumber">14<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="exercises-systems-8-4-1-1">
+<span class="process-math">\(\displaystyle
+\begin{abmatrix}{rr|r}
+1 \amp -2 \amp 0 \\
+0 \amp  1 \amp 3 \\
+0 \amp  0 \amp 0
+\end{abmatrix}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-8-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercises-systems-8-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="exercises-systems-8-4-2-1">
+<div class="para">Using variables <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{,}\)</span> the corresponding system is</div>
+<div class="displaymath process-math" id="exercises-systems-8-4-2-1-3">
+\begin{equation*}
+\begin{sysofeqns}{rcrcr}
+x \amp - \amp 2 y \amp = \amp 0 \\
+\amp   \amp   y \amp = \amp 3 \\
+0 x \amp + \amp 0 y \amp = \amp 0
+\end{sysofeqns}\text{.}
+\end{equation*}
+</div>
+<div class="para">Notice that the third equation essentially says <span class="process-math">\(0 = 0\text{,}\)</span> which is true but contains no useful information. From the second equation, we immediately have <span class="process-math">\(y = 3\text{,}\)</span> and we can substitute that value into the first equation to obtain</div>
+<div class="displaymath process-math" id="exercises-systems-8-4-2-1-6">
+\begin{gather*}
+x - 2 y = 0 \\
+x - 2 \cdot 3 = 0 \\
+x - 6 = 0 \\
+x = 6 \text{.}
+\end{gather*}
+</div>
+<div class="para">So the solution to the system is <span class="process-math">\(x = 6, y = 3\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-8-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.5.14.1"><a tabindex="-1" href="#exercises-systems-8-4-2" title="Copy heading and permalink for Solution 1.5.14.1" aria-label="Copy heading and permalink for Solution 1.5.14.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1.5.14"><a tabindex="-1" href="#exercises-systems-8-4" title="Copy heading and permalink for Exercise 1.5.14" aria-label="Copy heading and permalink for Exercise 1.5.14">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercise-systems-interpret-augmented-3vars"><h3 class="heading"><span class="codenumber">15<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="exercise-systems-interpret-augmented-3vars-1-1">
+<span class="process-math">\(\displaystyle
+\begin{abmatrix}{rrr|r}
+1 \amp -3 \amp -2 \amp  5 \\
+0 \amp  1 \amp  3 \amp -3 \\
+0 \amp  0 \amp  1 \amp  2
+\end{abmatrix}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise-systems-interpret-augmented-3vars-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercise-systems-interpret-augmented-3vars-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="exercise-systems-interpret-augmented-3vars-2-1">
+<div class="para">Using variables <span class="process-math">\(x,y,z\)</span> the corresponding system is</div>
+<div class="displaymath process-math" id="exercise-systems-interpret-augmented-3vars-2-1-2">
+\begin{equation*}
+\begin{sysofeqns}{rcrcrcr}
+x \amp - \amp 3 y \amp - \amp 2 z \amp = \amp  5 \\
+\amp   \amp   y \amp + \amp 3 z \amp = \amp -3 \\
+\amp   \amp     \amp   \amp   z \amp = \amp  2
+\end{sysofeqns}\text{.}
+\end{equation*}
+</div>
+<div class="para">From the third equation, we immediately have <span class="process-math">\(z = 2\text{,}\)</span> and we can substitute that value into the second equation to obtain</div>
+<div class="displaymath process-math" id="exercise-systems-interpret-augmented-3vars-2-1-4">
+\begin{gather*}
+y + 3 z = -3 \\
+y + 3 \cdot 2 = -3 \\
+y + 6 = -3 \\
+y = -9 \text{.}
+\end{gather*}
+</div>
+<div class="para">Knowing values for both <span class="process-math">\(y\)</span> and <span class="process-math">\(z\text{,}\)</span> we can substitute them into the first equation to obtain</div>
+<div class="displaymath process-math" id="exercise-systems-interpret-augmented-3vars-2-1-7">
+\begin{gather*}
+x - 3 y - 2 z = 5 \\
+x - 3 \cdot (-9) - 2 \cdot 2 = 5 \\
+x + 23 = 5 \\
+x = - 18 \text{.}
+\end{gather*}
+</div>
+<div class="para">So the solution to the system is <span class="process-math">\(x = -18, y = -9, z = 2\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise-systems-interpret-augmented-3vars-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.5.15.1"><a tabindex="-1" href="#exercise-systems-interpret-augmented-3vars-2" title="Copy heading and permalink for Solution 1.5.15.1" aria-label="Copy heading and permalink for Solution 1.5.15.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1.5.15"><a tabindex="-1" href="#exercise-systems-interpret-augmented-3vars" title="Copy heading and permalink for Exercise 1.5.15" aria-label="Copy heading and permalink for Exercise 1.5.15">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercises-systems-8-6"><h3 class="heading"><span class="codenumber">16<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="exercises-systems-8-6-1-1">
+<span class="process-math">\(\displaystyle
+\begin{abmatrix}{rrr|r}
+1 \amp -3 \amp -2 \amp  5 \\
+0 \amp  1 \amp  3 \amp -3 \\
+0 \amp  0 \amp  1 \amp  2 \\
+0 \amp  0 \amp  0 \amp  4
+\end{abmatrix}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-8-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercises-systems-8-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="exercises-systems-8-6-2-1">
+<div class="para">Using variables <span class="process-math">\(x,y,z\)</span> the corresponding system is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/exercise-systems-interpret-augmented-3vars.html" id="exercises-systems-8-6-2-1-2">
+\begin{equation*}
+\begin{sysofeqns}{rcrcrcr}
+x \amp - \amp 3 y \amp - \amp 2 z \amp = \amp  5 \\
+\amp   \amp   y \amp + \amp 3 z \amp = \amp -3 \\
+\amp   \amp     \amp   \amp   z \amp = \amp  2 \\
+0 x \amp + \amp 0 y \amp + \amp 0 z \amp = \amp  4
+\end{sysofeqns}\text{.}
+\end{equation*}
+</div>
+<div class="para">At first glance this seems very similar to the system from <a href="exercises-systems.html#exercise-systems-interpret-augmented-3vars" class="xref" data-knowl="./knowl/xref/exercise-systems-interpret-augmented-3vars.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 1.5.15">Exercise 15</a>. However, here we have a fourth equation that essentially says <span class="process-math">\(0 = 4\text{,}\)</span> which is <em class="alert">false</em>, and there is no combination of values for <span class="process-math">\(x,y,z\)</span> that will make it true. So while the values <span class="process-math">\(x = -18, y = -9, z = 2\)</span> will simultaneously satisfy the first three equations in the system, there is <em class="alert">no</em> combination of variable values that will simultaneously satisfy all <em class="emphasis">four</em> equations, and therefore the system is inconsistent.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-8-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.5.16.1"><a tabindex="-1" href="#exercises-systems-8-6-2" title="Copy heading and permalink for Solution 1.5.16.1" aria-label="Copy heading and permalink for Solution 1.5.16.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1.5.16"><a tabindex="-1" href="#exercises-systems-8-6" title="Copy heading and permalink for Exercise 1.5.16" aria-label="Copy heading and permalink for Exercise 1.5.16">🔗</a></div>
+</article>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise Group 1.5.13–16: Interpreting augmented matrices"><a tabindex="-1" href="#exercises-systems-8" title="Copy heading and permalink for Exercise Group 1.5.13–16: Interpreting augmented matrices" aria-label="Copy heading and permalink for Exercise Group 1.5.13–16: Interpreting augmented matrices">🔗</a></div>
+</div>
+<div class="exercisegroup" id="exercises-systems-9">
+<h2 class="heading"><span class="title">Performing row operations.</span></h2>
+<div class="introduction" id="exercises-systems-9-2">
+<div class="para" id="exercises-systems-9-2-1">In each case, perform the stated <dfn class="terminology"><code class="code-inline tex2jax_ignore">[cross-reference to target(s) "definition-systems-rowop" missing or not unique]</code></dfn> on the given matrix. Then explore how the row operation represents an algebraic manipulation/combination of equations in the underlying system.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<div class="exercisegroup-exercises cols2 multicolumn">
+<article class="exercise exercise-like" id="exercises-systems-9-3"><h3 class="heading"><span class="codenumber">17<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para logical" id="exercises-systems-9-3-1-1">
+<div class="para">Interchange the first and second rows.</div>
+<div class="displaymath process-math" id="exercises-systems-9-3-1-1-1">
+\begin{equation*}
+\begin{abmatrix}{rrr|r}
+4 \amp 8 \amp -7 \amp  3 \\
+1 \amp 2 \amp -3 \amp -1 \\
+-2 \amp 0 \amp -4 \amp 13
+\end{abmatrix}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-9-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercises-systems-9-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para logical" id="exercises-systems-9-3-2-1">
+<div class="displaymath process-math" id="exercises-systems-9-3-2-1-1">
+\begin{equation*}
+\begin{abmatrix}{rrr|r}
+4 \amp 8 \amp -7 \amp  3 \\
+1 \amp 2 \amp -3 \amp -1 \\
+-2 \amp 0 \amp -4 \amp 13
+\end{abmatrix}
+\xrightarrow{R_1 \leftrightarrow R_2}
+\begin{abmatrix}{rrr|r}
+1 \amp 2 \amp -3 \amp -1 \\
+4 \amp 8 \amp -7 \amp  3 \\
+-2 \amp 0 \amp -4 \amp 13
+\end{abmatrix}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-9-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="exercises-systems-9-3-2-2">
+<div class="para">Using variables <span class="process-math">\(x,y,z\text{,}\)</span> the original system of equations is</div>
+<div class="displaymath process-math" id="exercises-systems-9-3-2-2-2">
+\begin{equation*}
+\begin{sysofeqns}{rcrcrcr}
+4 x \amp + \amp 8 y \amp - \amp 7 z \amp = \amp  3 \\
+1 x \amp + \amp 2 y \amp - \amp 3 z \amp = \amp -1 \\
+-2 x \amp    \amp    \amp - \amp 4 z \amp = \amp 13
+\end{sysofeqns}\text{.}
+\end{equation*}
+</div>
+<div class="para">Interchanging the order of the first two equations leads to system</div>
+<div class="displaymath process-math" id="exercises-systems-9-3-2-2-3">
+\begin{equation*}
+\begin{sysofeqns}{rcrcrcr}
+1 x \amp + \amp 2 y \amp - \amp 3 z \amp = \amp -1 \\
+4 x \amp + \amp 8 y \amp - \amp 7 z \amp = \amp  3 \\
+-2 x \amp    \amp    \amp - \amp 4 z \amp = \amp 13
+\end{sysofeqns}\text{,}
+\end{equation*}
+</div>
+<div class="para">and the coefficients/constants of this re-ordered system correspond exactly to the entries in the result matrix above.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-9-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.5.17.1"><a tabindex="-1" href="#exercises-systems-9-3-2" title="Copy heading and permalink for Answer 1.5.17.1" aria-label="Copy heading and permalink for Answer 1.5.17.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1.5.17"><a tabindex="-1" href="#exercises-systems-9-3" title="Copy heading and permalink for Exercise 1.5.17" aria-label="Copy heading and permalink for Exercise 1.5.17">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercises-systems-9-4"><h3 class="heading"><span class="codenumber">18<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para logical" id="exercises-systems-9-4-1-1">
+<div class="para">Interchange the third and fifth rows.</div>
+<div class="displaymath process-math" id="exercises-systems-9-4-1-1-1">
+\begin{equation*}
+\begin{abmatrix}{rrrr|r}
+1 \amp 1 \amp -6 \amp 3 \amp  3 \\
+0 \amp 1 \amp 6 \amp -1 \amp  2 \\
+0 \amp 0 \amp 0 \amp  4 \amp -1 \\
+0 \amp 0 \amp 0 \amp -4 \amp -7 \\
+0 \amp 0 \amp 0 \amp  1 \amp  3
+\end{abmatrix}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-9-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercises-systems-9-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para logical" id="exercises-systems-9-4-2-1">
+<div class="displaymath process-math" id="exercises-systems-9-4-2-1-1">
+\begin{equation*}
+\begin{abmatrix}{rrrrr|r}
+1 \amp 1 \amp -6 \amp 3 \amp  3 \amp  7 \\
+0 \amp 1 \amp 6 \amp -1 \amp  2 \amp  3 \\
+0 \amp 0 \amp 0 \amp  4 \amp -1 \amp -8 \\
+0 \amp 0 \amp 0 \amp -4 \amp -7 \amp  7 \\
+0 \amp 0 \amp 0 \amp  1 \amp  3 \amp  3
+\end{abmatrix}
+\xrightarrow{R_3 \leftrightarrow R_5}
+\begin{abmatrix}{rrrrr|r}
+1 \amp 1 \amp -6 \amp 3 \amp  3 \amp  7 \\
+0 \amp 1 \amp 6 \amp -1 \amp  2 \amp  3 \\
+0 \amp 0 \amp 0 \amp  1 \amp  3 \amp  3 \\
+0 \amp 0 \amp 0 \amp -4 \amp -7 \amp  7 \\
+0 \amp 0 \amp 0 \amp  4 \amp -1 \amp -8
+\end{abmatrix}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-9-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="exercises-systems-9-4-2-2">
+<div class="para">Using variables <span class="process-math">\(x_1,x_2,x_3,x_4,x_5\text{,}\)</span> the original system of equations is</div>
+<div class="displaymath process-math" id="exercises-systems-9-4-2-2-2">
+\begin{equation*}
+\begin{sysofeqns}{rcrcrcrcrcr}
+x_1 \amp + \amp x_2 \amp - \amp 6 x_3 \amp + \amp  3 x_4 \amp + \amp 3 x_5 \amp = \amp  7 \\
+\amp   \amp x_2 \amp + \amp 6 x_3 \amp - \amp    x_4 \amp + \amp 2 x_5 \amp = \amp  3 \\
+\amp   \amp     \amp   \amp       \amp   \amp  4 x_4 \amp - \amp   x_5 \amp = \amp -8 \\
+\amp   \amp     \amp   \amp       \amp   \amp -4 x_4 \amp - \amp 7 x_5 \amp = \amp  7 \\
+\amp   \amp     \amp   \amp       \amp   \amp    x_4 \amp + \amp 3 x_5 \amp = \amp  3
+\end{sysofeqns}\text{.}
+\end{equation*}
+</div>
+<div class="para">Interchanging the order of the third and fifth equations leads to system</div>
+<div class="displaymath process-math" id="exercises-systems-9-4-2-2-3">
+\begin{equation*}
+\begin{sysofeqns}{rcrcrcrcrcr}
+x_1 \amp + \amp x_2 \amp - \amp 6 x_3 \amp + \amp  3 x_4 \amp + \amp 3 x_5 \amp = \amp  7 \\
+\amp   \amp x_2 \amp + \amp 6 x_3 \amp - \amp    x_4 \amp + \amp 2 x_5 \amp = \amp  3 \\
+\amp   \amp     \amp   \amp       \amp   \amp    x_4 \amp + \amp 3 x_5 \amp = \amp  3 \\
+\amp   \amp     \amp   \amp       \amp   \amp -4 x_4 \amp - \amp 7 x_5 \amp = \amp  7 \\
+\amp   \amp     \amp   \amp       \amp   \amp  4 x_4 \amp - \amp   x_5 \amp = \amp -8
+\end{sysofeqns}\text{,}
+\end{equation*}
+</div>
+<div class="para">and the coefficients/constants of this re-ordered system correspond exactly to the entries in the result matrix above.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-9-4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.5.18.1"><a tabindex="-1" href="#exercises-systems-9-4-2" title="Copy heading and permalink for Answer 1.5.18.1" aria-label="Copy heading and permalink for Answer 1.5.18.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1.5.18"><a tabindex="-1" href="#exercises-systems-9-4" title="Copy heading and permalink for Exercise 1.5.18" aria-label="Copy heading and permalink for Exercise 1.5.18">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercises-systems-9-5"><h3 class="heading"><span class="codenumber">19<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para logical" id="exercises-systems-9-5-1-1">
+<div class="para">Multiply the second row by <span class="process-math">\(1/3\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="exercises-systems-9-5-1-1-2">
+\begin{equation*}
+\begin{abmatrix}{rrr|r}
+2 \amp 4 \amp  3 \amp -7 \\
+3 \amp 6 \amp  6 \amp  9 \\
+0 \amp 4 \amp 13 \amp  2
+\end{abmatrix}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-9-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercises-systems-9-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para logical" id="exercises-systems-9-5-2-1">
+<div class="displaymath process-math" id="exercises-systems-9-5-2-1-1">
+\begin{equation*}
+\begin{abmatrix}{rrr|r}
+2 \amp 4 \amp  3 \amp -7 \\
+3 \amp 6 \amp  6 \amp  9 \\
+0 \amp 4 \amp 13 \amp  2
+\end{abmatrix}
+\xrightarrow{\frac{1}{3} R_2}
+\begin{abmatrix}{rrr|r}
+2 \amp 4 \amp  3 \amp -7 \\
+1 \amp 2 \amp  2 \amp  3 \\
+0 \amp 4 \amp 13 \amp  2
+\end{abmatrix}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-9-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="exercises-systems-9-5-2-2">
+<div class="para">Using variables <span class="process-math">\(x,y,z\text{,}\)</span> the original second row represents the equation</div>
+<div class="displaymath process-math" id="exercises-systems-9-5-2-2-2">
+\begin{equation*}
+3 x + 6 y + 6 z = 9 \text{.}
+\end{equation*}
+</div>
+<div class="para">The coefficients and constant in this equation have a factor of <span class="process-math">\(3\)</span> in common, and multiplying the equation by <span class="process-math">\(1/3\)</span> represents “cancelling out” this common factor on both sides:</div>
+<div class="displaymath process-math" id="exercises-systems-9-5-2-2-6">
+\begin{equation*}
+3 x + 6 y + 6 z = 9 \quad \longrightarrow \quad x + 2 y + 2 z = 3 \text{.}
+\end{equation*}
+</div>
+<div class="para">The coefficients/constant in this new equation correspond exactly to the new second row in our manipulated matrix above.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-9-5-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.5.19.1"><a tabindex="-1" href="#exercises-systems-9-5-2" title="Copy heading and permalink for Answer 1.5.19.1" aria-label="Copy heading and permalink for Answer 1.5.19.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1.5.19"><a tabindex="-1" href="#exercises-systems-9-5" title="Copy heading and permalink for Exercise 1.5.19" aria-label="Copy heading and permalink for Exercise 1.5.19">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercise-systems-row-op-div7"><h3 class="heading"><span class="codenumber">20<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para logical" id="exercise-systems-row-op-div7-1-1">
+<div class="para">Multiply the first row by <span class="process-math">\(1/7\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="exercise-systems-row-op-div7-1-1-2">
+\begin{equation*}
+\begin{abmatrix}{rrrr|r}
+7 \amp -21 \amp 15 \amp 0 \amp  7 \\
+12 \amp - 5 \amp -4 \amp 1 \amp  8 \\
+11 \amp - 1 \amp -1 \amp 3 \amp -2
+\end{abmatrix}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise-systems-row-op-div7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercise-systems-row-op-div7-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para logical" id="exercise-systems-row-op-div7-2-1">
+<div class="displaymath process-math" id="exercise-systems-row-op-div7-2-1-1">
+\begin{equation*}
+\begin{abmatrix}{rrrr|r}
+7 \amp -21 \amp 15 \amp 0 \amp  7 \\
+12 \amp - 5 \amp -4 \amp 1 \amp  8 \\
+11 \amp - 1 \amp -1 \amp 3 \amp -2
+\end{abmatrix}
+\xrightarrow{\frac{1}{7} R_1}
+\begin{abmatrix}{rrrr|r}
+1 \amp -3 \amp \frac{15}{7} \amp 0 \amp  1 \\
+12 \amp -5 \amp      -4      \amp 1 \amp  8 \\
+11 \amp -1 \amp      -1      \amp 3 \amp -2
+\end{abmatrix}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise-systems-row-op-div7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="exercise-systems-row-op-div7-2-2">
+<div class="para">Using variables <span class="process-math">\(x_1,x_2,x_3,x_4\text{,}\)</span> the original first row represents the equation</div>
+<div class="displaymath process-math" data-contains-math-knowls="" id="exercise-systems-row-op-div7-2-2-2">
+\begin{equation*}
+7 x_1 - 21 x_2 + 15 x_3 = 7 \text{.}
+\end{equation*}
+</div>
+<div class="para">Most of the coefficients and constant in this equation have a factor of <span class="process-math">\(7\)</span> in common. Usually, in purely algebraic manipulations we would not divide this equation through by that common factor. But when we develop an algorithm for systematically simplifying systems of equations through matrix operations in <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "chapter-row-red" missing or not unique]</code>, we will find that it is advantageous to perform operations to reduce the “leading” coefficient in some of the equations in the system to <span class="process-math">\(1\text{,}\)</span> which is precisely what our chosen operation achieves:</div>
+<div class="displaymath process-math" data-contains-math-knowls="" id="exercise-systems-row-op-div7-2-2-7">
+\begin{equation*}
+7 x_1 - 21 x_2 + 15 x_3 = 7 \quad \longrightarrow \quad x_1 - 3 x_2 + \tfrac{15}{7} x_3 = 1 \text{.}
+\end{equation*}
+</div>
+<div class="para">The coefficients/constant in this new equation correspond exactly to the new first row in our manipulated matrix above. (While we often try to avoid fractions in our matrices, there is no reason a matrix cannot contain fractional entries because there is no reason the coefficients in an equation cannot be fractions.)</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise-systems-row-op-div7-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.5.20.1"><a tabindex="-1" href="#exercise-systems-row-op-div7-2" title="Copy heading and permalink for Answer 1.5.20.1" aria-label="Copy heading and permalink for Answer 1.5.20.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1.5.20"><a tabindex="-1" href="#exercise-systems-row-op-div7" title="Copy heading and permalink for Exercise 1.5.20" aria-label="Copy heading and permalink for Exercise 1.5.20">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercises-systems-9-7"><h3 class="heading"><span class="codenumber">21<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para logical" id="exercises-systems-9-7-1-1">
+<div class="para">Add <span class="process-math">\(2\)</span>-times the first row to the third row.</div>
+<div class="displaymath process-math" id="exercises-systems-9-7-1-1-2">
+\begin{equation*}
+\begin{abmatrix}{rrrr|r}
+1 \amp 3 \amp  1 \amp -2 \amp 1 \\
+0 \amp 1 \amp  1 \amp -2 \amp 3 \\
+-2 \amp 1 \amp -6 \amp  8 \amp 5
+\end{abmatrix}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-9-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercises-systems-9-7-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para logical" id="exercises-systems-9-7-2-1">
+<div class="displaymath process-math" id="exercises-systems-9-7-2-1-1">
+\begin{equation*}
+\begin{abmatrix}{rrrr|r}
+1 \amp 3 \amp  1 \amp -2 \amp 1 \\
+0 \amp 1 \amp  1 \amp -2 \amp 3 \\
+-2 \amp 1 \amp -6 \amp  8 \amp 5
+\end{abmatrix}
+\xrightarrow{R_3 + 2 R_1}
+\begin{abmatrix}{rrrr|r}
+1 \amp  3 \amp  1 \amp -2 \amp 1 \\
+0 \amp  1 \amp  1 \amp -2 \amp 3 \\
+0 \amp  7 \amp -4 \amp  4 \amp 3
+\end{abmatrix}
+\end{equation*}
+</div>
+<div class="para">
+<em class="emphasis">Notice that the first row has not changed.</em> We wished to modify the third row using a multiple of the first, but the first row itself is not modified by that multiple.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-9-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="exercises-systems-9-7-2-2">
+<div class="para">Using variables <span class="process-math">\(w,x,y,z\text{,}\)</span> the original first and third rows represent the equations</div>
+<div class="displaymath process-math" id="exercises-systems-9-7-2-2-2">
+\begin{align*}
+w + 3 x +   y - 2 z \amp = 1 \text{,} \\
+-2 w +   x - 6 y + 8 z \amp = 5 \text{.} 
+\end{align*}
+</div>
+<div class="para">Combine left- and right-hand sides identically. Since each left-hand side is assumed to be equal to its corresponding right-hand side, any specific combination of left-hand sides will be equal to the identical combination of right-hand sides. In the combination of left-hand sides, we simplify by collecting like terms.</div>
+<div class="displaymath process-math" id="exercises-systems-9-7-2-2-3">
+\begin{gather*}
+{\text{LHS}}_3 + 2 ({\text{LHS}}_1) = {\text{RHS}}_3 + 2 ({\text{RHS}}_1) \\
+(-2 w + x - 6 y + 8 z) + 2 (w + 3 x + y - 2 z) = 5 - 2 \cdot 1 \\
+(-2 w + x - 6 y + 8 z) + (2 w + 6 x + 2 y - 4 z) = 5 - 2 \\
+7 x - 4 y + 4 z = 3 
+\end{gather*}
+</div>
+<div class="para">The coefficients/constant in this new equation correspond exactly to the new third row in our manipulated matrix above. (Recall that we have assigned the variable <span class="process-math">\(w\)</span> to the first column in the original matrix. The fact that <span class="process-math">\(w\)</span> no longer appears in the new equation corresponds to the zero value in the first entry of the new third row.)</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-9-7-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.5.21.1"><a tabindex="-1" href="#exercises-systems-9-7-2" title="Copy heading and permalink for Answer 1.5.21.1" aria-label="Copy heading and permalink for Answer 1.5.21.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1.5.21"><a tabindex="-1" href="#exercises-systems-9-7" title="Copy heading and permalink for Exercise 1.5.21" aria-label="Copy heading and permalink for Exercise 1.5.21">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercises-systems-9-8"><h3 class="heading"><span class="codenumber">22<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para logical" id="exercises-systems-9-8-1-1">
+<div class="para">Subtract the second row from the first. <em class="emphasis">Note:</em> This operation should modify the first row only.</div>
+<div class="displaymath process-math" id="exercises-systems-9-8-1-1-2">
+\begin{equation*}
+\begin{abmatrix}{rrr|r}
+3 \amp 9 \amp -2 \amp 3 \\
+2 \amp 6 \amp  1 \amp 1
+\end{abmatrix}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-9-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercises-systems-9-8-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para logical" id="exercises-systems-9-8-2-1">
+<div class="displaymath process-math" id="exercises-systems-9-8-2-1-1">
+\begin{equation*}
+\begin{abmatrix}{rrr|r}
+3 \amp 9 \amp -2 \amp 3 \\
+2 \amp 6 \amp  1 \amp 1
+\end{abmatrix}
+\xrightarrow{R_1 - R_2}
+\begin{abmatrix}{rrr|r}
+1 \amp 3 \amp -3 \amp 2 \\
+2 \amp 6 \amp  1 \amp 1
+\end{abmatrix}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-9-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="exercises-systems-9-8-2-2">
+<div class="para">Using variables <span class="process-math">\(x,y,z\text{,}\)</span> the original equations are</div>
+<div class="displaymath process-math" id="exercises-systems-9-8-2-2-2">
+\begin{align*}
+3 x + 9 y - 2 z \amp = 3 \text{,} \\
+2 x + 6 y +   z \amp = 1 \text{.} 
+\end{align*}
+</div>
+<div class="para">Combine left- and right-hand sides identically. Since each left-hand side is assumed to be equal to its corresponding right-hand side, any specific combination of left-hand sides will be equal to the identical combination of right-hand sides. In the combination of left-hand sides, we simplify by collecting like terms.</div>
+<div class="displaymath process-math" id="exercises-systems-9-8-2-2-3">
+\begin{gather*}
+{\text{LHS}}_1 - {\text{LHS}}_2 = {\text{RHS}}_1 - {\text{RHS}}_2 \\
+(3 x + 9 y - 2 z) - (2 x + 6 y +   z) = 3 - 1 \\
+x + 3 y - 3 z = 2 
+\end{gather*}
+</div>
+<div class="para">The coefficients/constant in this new equation correspond exactly to the new first row in our manipulated matrix above.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-9-8-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="exercises-systems-9-8-2-3">In <a href="exercises-systems.html#exercise-systems-row-op-div7" class="xref" data-knowl="./knowl/xref/exercise-systems-row-op-div7.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 1.5.20">Exercise 20</a>, our choice of operation had a purpose: to reduce the leading coefficient in that equation to <span class="process-math">\(1\text{.}\)</span> But the operation had the side-effect of introducing fractions into our matrix. Here we were able to reduce the leading coefficient in the first equation to <span class="process-math">\(1\)</span> <em class="emphasis">without</em> introducing fractions, as would have happened if we had instead multiplied the first row by <span class="process-math">\(1/3\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-9-8-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.5.22.1"><a tabindex="-1" href="#exercises-systems-9-8-2" title="Copy heading and permalink for Answer 1.5.22.1" aria-label="Copy heading and permalink for Answer 1.5.22.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1.5.22"><a tabindex="-1" href="#exercises-systems-9-8" title="Copy heading and permalink for Exercise 1.5.22" aria-label="Copy heading and permalink for Exercise 1.5.22">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercises-systems-9-9"><h3 class="heading"><span class="codenumber">23<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para logical" id="exercises-systems-9-9-1-1">
+<div class="para">Subtract <span class="process-math">\(3\)</span>-times the third row from the second. Take care when subtracting a negative! <em class="emphasis">Note:</em> This operation should modify the second row only.</div>
+<div class="displaymath process-math" id="exercises-systems-9-9-1-1-3">
+\begin{equation*}
+\begin{abmatrix}{rrrr|r}
+1 \amp -3 \amp  0 \amp -1 \amp  1 \\
+0 \amp  0 \amp 16 \amp  4 \amp  1 \\
+0 \amp  0 \amp  5 \amp -2 \amp -1
+\end{abmatrix}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-9-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercises-systems-9-9-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="answer solution-like knowl__content">
+<div class="para logical" id="exercises-systems-9-9-2-1">
+<div class="displaymath process-math" id="exercises-systems-9-9-2-1-1">
+\begin{equation*}
+\begin{abmatrix}{rrrr|r}
+1 \amp -3 \amp  0 \amp -1 \amp  1 \\
+0 \amp  0 \amp 16 \amp  4 \amp  1 \\
+0 \amp  0 \amp  5 \amp -2 \amp -1
+\end{abmatrix}
+\xrightarrow{R_2 - 3 R_3}
+\begin{abmatrix}{rrrr|r}
+1 \amp -3 \amp  0 \amp -1 \amp  1 \\
+0 \amp  0 \amp  1 \amp 10 \amp  4 \\
+0 \amp  0 \amp  5 \amp -2 \amp -1
+\end{abmatrix}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-9-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="exercises-systems-9-9-2-2">
+<div class="para">Using variables <span class="process-math">\(x_1,x_2,x_3,x_4\text{,}\)</span> the original equations are</div>
+<div class="displaymath process-math" id="exercises-systems-9-9-2-2-2">
+\begin{align*}
+16 x_3 + 4 x_4 \amp =  1 \text{,} \\
+5 x_3 - 2 x_4 \amp = -1 \text{.} 
+\end{align*}
+</div>
+<div class="para">Combine left- and right-hand sides identically. Since each left-hand side is assumed to be equal to its corresponding right-hand side, any specific combination of left-hand sides will be equal to the identical combination of right-hand sides. In the combination of left-hand sides, we simplify by collecting like terms.</div>
+<div class="displaymath process-math" id="exercises-systems-9-9-2-2-3">
+\begin{gather*}
+{\text{LHS}}_2 - 3 ({\text{LHS}}_3) = {\text{RHS}}_2 - 3 ({\text{RHS}}_3) \\
+(16 x_3 + 4 x_4) - 3 (5 x_3 - 2 x_4) = 1 - 3 (-1) \\
+16 x_3 + 4 x_4 - 15 x_3 \mathbin{\color{red} \boldsymbol{+}} 6 x_4 = 1 \mathbin{\color{red} \boldsymbol{+}} 3 \\
+x_3 + 10 x_4  = 4 
+\end{gather*}
+</div>
+<div class="para">The coefficients/constant in this new equation correspond exactly to the new second row in our manipulated matrix above.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercises-systems-9-9-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Answer 1.5.23.1"><a tabindex="-1" href="#exercises-systems-9-9-2" title="Copy heading and permalink for Answer 1.5.23.1" aria-label="Copy heading and permalink for Answer 1.5.23.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1.5.23"><a tabindex="-1" href="#exercises-systems-9-9" title="Copy heading and permalink for Exercise 1.5.23" aria-label="Copy heading and permalink for Exercise 1.5.23">🔗</a></div>
+</article>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise Group 1.5.17–23: Performing row operations"><a tabindex="-1" href="#exercises-systems-9" title="Copy heading and permalink for Exercise Group 1.5.17–23: Performing row operations" aria-label="Copy heading and permalink for Exercise Group 1.5.17–23: Performing row operations">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercises 1.5: Exercises"><a tabindex="-1" href="#exercises-systems" title="Copy heading and permalink for Exercises 1.5: Exercises" aria-label="Copy heading and permalink for Exercises 1.5: Exercises">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="section-systems-examples.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="reflections-systems.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" alt="Runestone Academy logo" src="data:image/png;base64,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"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" alt="MathJax logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAABgFBMVEUZlkYjHiBJpFaJu4h1s3cmIySYwpZnrGstmUvW5dOqy6ZGRkZaqWIAAAAhHB2307McFxk4oFA4NzfJ3MVRV1GIiYl2eHbl7eKhxp3B2L1HmVTh6t2qq6oVoUtpaGlOZ1G0tbSSl5M7RTowiUtNdlN+t4BwlnEUmkaNqYwAfwEIp09riGwVl0gUmkcUmkctnErr8ec5dEc8V0FOh1fExcMAf383VTo5ZkZdsWVAPj9BPkBdg2FammFVqlUUmkciIB9/f38Afz8A/wA+P0A+SEFIpllJpVpPqWYDhSUOm0YVqj8A/38A//8pnEYomkc6oVA6oE9gXV9ps3V//3////8QCw0AXAAAagAAfBAAixcAghQLiy4NjC4AjUYVlD8RkCwckjgqYDk/fz8qlTwillE8n1A2pFJAQT9fX2BAn1NCo1ZEq2Z/gYBnrW9rtHZ3wIaAf4CAin+BnX+eoKCAtn+/4b3//wDj8d8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACl+HKkAAAAgHRSTlP+//7+/v/+/v7+///+AP/+//7//v////7////+//7///////////9o/wMH/yyzzWn+/////wL/////////A0v/AgQB//+0y60pEgwCATFLssT/zQIB/wsMLwszFkwSDEps/wRtFr1j///cZMn/3Ln0////////Af8AAAAAAAAAADN3ZZgAAAl5SURBVHjatZqJd9q4FodtjMAgbIyQHSDYxkCAhJC1aSZtX+fNTJeZebMvb9/3fV/+/XclL5JsmfacSe85aU5S5/fdTVeSD4aT27cc57s//OPLL5qWZEdHR02ttSXrFdZovHj+249/wMUyM7LvN45z/Ku/tv7Tubg4YHbYyWzIbTwe97l1cxuNWqkVvuTsxvPzn3BBGQDE8y/6/wP1Q7COZKp+jmiV1C05uOZbL86LIIxM//3nfaZ+kJkKyePISYX7UjKV5DV7n546JwLwX+dnzc6BsHIUhT4A+nJ6BOGoVJ1m4xPn3RzwS2dtHQjvq/oFYdzX578K6LUb5847KeBL58cWFFUJQKs/zmusAZT7i7XUJyANgG877zdBcJ//KUC0UDVDVrl/edOegjgDvOgcdg6Ful5+LOm/JqD32TEAbpzzLkge5tapWuq+BiD0/62NAMpwY3z1o790Cv1OR68/VtdY63VKAPqNP/z6K8P5eb8keHjB/5UAr1jDuiZKARCC8b2XJf2LYRJR6s8K/bGqrwXURND4zU+N7/+tM1QACfE8jyCPTmX9/QHUAhofG+d9FRB4LkL+NAmQGQ3z9CgBiAq0rE17tdHoC8C58bJf0kfI+/1sOp1Nyde40NcF0LK2GIHhbW0JGo1PjT8NZcDGNJHp4SnYDHse7tcGYLU2GBGMCTiEV0c1ATQ+M3rDsdB/QDxkmibkfzYLkIu8oLbCrRWTxzhI/hWYaFsHGBhNEcGQJcg0OcGnkCtAbPpdvb5FmD6hLJuBZ271+gwwFhEMcQZA0EiIhe9FAOjqEkQR0/cCDjBdtNoDyId9Z5bpAwGcBwHkEUvxP99oWgnXh2aeQTvceVCHekC/ACQFABAu4YStdom1Yo/9L3geBQF24WlIUrvSQxzQ1wNMkxGI9zutPq8AqJouJNPjScXKIH0dACcgb8MyPxopS6y18ggmbppMhDiAtDUZKgE2KsCERnxk0n4rU5YAAQCgTNKjAiDrq4BhF5dCAAJCSXFIEYAYQYUVXwpArwrI22jc+UcpBMgSJFdMt2LKYQAoz0I/6QIAQBsAwmiJ4EKDeEFXGp/pkIMJRFylI8zHdYCuDIAkmWnVhG+muR2p07n1T0RUAA+ALwRVnwMkQn/cjWEVuwoDujFQpz8rAVa88DD4vl0uV3qAZN3+hpKUIQjIiy15A7aICoBFuQxgLn2OyfVbir4GAD9aq5gqDDaRk4LQbAVuvgpELyDqJwE2l68A8PUKvxhtthS5ouLIQ7GV52mLhD6bFqybYej5lJikreqXAWycpQMB/t0ESCIALVgx+fZS6DN5aKgomU0D/B6Ese1VAL2RAJRX1EbqWsQQmFJKvEd8CqUrERE4gMwSSnhbPS4lqAToVhYsDE2llmyyMZ9dPs/ZsAqmD8B58h6bixp9Bmh1a/Q5gW9sIgo+2lyXfyESJQ9mPsV868z0dYBROvH7o7I863gLe65bmh8QCshjf8adx9ygXI+bVX0OaKX63ao8I2yIOnUQ00d30ZQ5TzJ5VpRls7cX0NWoc8IqYluWcD6t64NpxDPP7Q55ZqzVlwHZKFNmAreAEZCY4OD81MeF82xrduv0GcBKAVXh3DZxEGRZgpkQzIazCAt10Hdz/X2Aen3LWtEg4J0P+aEHF8NU/lEWA/zSpb0afQGw9lkcBZ97KD1p+NA53G9FH6S0+gVgXwBNa4XTJCG21Wdpz7/n+kCoA1j7AuCn2qM48mmaokwWZemHonuZ/qChBzQYoCaA/FWLRSEENvn44AT5YnVBUPMnqRJYHWA0qneeW2yiIFsMsAw8VKwu+GHeK/TtQR2gtU+92aQYu1EQpY3Ej2N590NRhP82mB7Qspr73kFhGiGTZgDI0l3W/fwwNCn0OaASBACaVqu5x9owGEBaApBsuKn6XN42jIEGYO3Vj3zWinmK+IGSsPSwil+X/DfA7Cpgv34CznokkOcRWNq0k6p+icAA9epNWGFMn98CiHQ7ye9Bc0U/AyiEfQDQJ/6G6UMFAmpWDRaxRl8h7AFw/YQXk+mjyr6WE+yBKq8QagFtpp9wfU/VR6VDdcO2KwBB0AP4Wz3Q97k+Tm9h0gFJPlW6lGfIKJktAG2tsfxwfZf4Un3ZEY8oxwDkzieDin5BqANAfwZc33RhHcsHPHI9WWJTIaDYDsMaQg0gX1/5lVm6VPHWXypMhOa3i0GoJdRFMKd+riHSzxIUp5FP5nkQbJH4sMnNf7Eox2FzwEAXAMU+8pCmK7PhMxk0aEaAVe77fvLnCDa5+e3SNiTIoAbQXD4KdPog9jAbPvZgEBcxUJ8h/Igd+Nz5pSETGKBXtieZPhJXwXSQvm0uxfAUBA/7qUE7wLNzqacGAKjot9kRHbHiisMWctPx/2QgZsNgWWQpDcJP/o7ZCzOFUAU0nhCXH9G9Yj6L/SuVz2aPILgedB03ynoiDpU0la1HPZddA6Iof3uUHc+hxg1b6EM9CwIg7lJEZIJni72AxiSmNEbRrHixkL6bA9eu8smWDYcwNt8u7okI1iYvBHKvBnsBzK7xLCoaCcLmJywzLuTzNM9daUi5mEUBNwqykAGTyaQKuPKnyrWAFVkCiMUk70MmIIIELkXeZSgtt8mkipjMpwkp7wAFQMpweJsnKUsUYZPdjY0yoMRY0qkaQQpYViezrfrBEmXWAARj0niIpzNaAaDr6mBWQ0g3bNgkbD0gYwwYYOqXJ4WLNHPfWCC3OlJiGWBXjQOmpfdfyH1m6OxZ9RZqXkqAgQYweEgA4KsbPfgVavTDZTmVUGmpTbUAe4mS6VRaCenEWWgjWJQPHMi8lf9fC7Dn7KV0gpSt8SrUAux5KZXKtDPO9IAF3FZnMgDitg29XcqbR2manhk7PQAIhGLlvdpljb5hXxWHADbj53Imd8a6BgAErxh2iF3l6wJgBMRfwiD27VZZ6GvjNDSq4uLP+G4GX+iyXh8evZzDHGKPPSw1wqnx4S6s/bMFJdwvQuPFPn2OiOmzymPh7kPDWYd7/sxeXF8vFob9Cvn02eoJMlw7xkcnZ6Hxhiw8O/nIuNkbwjcErJ0bwzk+flMhhGfHxw4AnFPjjRBC49RhAOc7ztM3E8FTkOYfGnjHWd9/DKGxzj804DjvQgzhfes/FR97cJwT53QX3iMiDHfKBzcY4Xh9dl+IMDxbH2f6xYdnjh3ng/XuPhIVGrv1B1xQAbAgnJPT9e7sm8mf7danJ07uPtj/AWFeRaMe9pxOAAAAAElFTkSuQmCC"></a>
+</div>
+</body>
+</html>
