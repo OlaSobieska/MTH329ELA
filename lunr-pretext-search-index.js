@@ -595,6 +595,33 @@ var ptx_lunr_docs = [
   "body": " Determinants, the adjoint, and inverses  Content!   "
 },
 {
+  "id": "ch-vectors",
+  "level": "1",
+  "url": "ch-vectors.html",
+  "type": "Chapter",
+  "number": "11",
+  "title": "Introduction to vectors",
+  "body": " Introduction to vectors  Content!    "
+},
+{
+  "id": "ch-vector-geom",
+  "level": "1",
+  "url": "ch-vector-geom.html",
+  "type": "Chapter",
+  "number": "12",
+  "title": "Geometry of vectors",
+  "body": " Geometry of vectors  Content!    "
+},
+{
+  "id": "ch-orthog",
+  "level": "1",
+  "url": "ch-orthog.html",
+  "type": "Chapter",
+  "number": "13",
+  "title": "Orthogonal vectors",
+  "body": " Orthogonal vectors  Content!    "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
