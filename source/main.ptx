@@ -22,6 +22,9 @@
 	  <xi:include href="./ch-det.ptx" />
 	  <xi:include href="./ch-det-by-row-red.ptx" />
 	  <xi:include href="./ch-more-det.ptx" />
+    <xi:include href="./ch-vectors.ptx" />
+	  <xi:include href="./ch-vector-geom.ptx" />
+	  <xi:include href="./ch-orthog.ptx" />
 
     <!-- Include backmatter -->
     <xi:include href="./backmatter.ptx" />
