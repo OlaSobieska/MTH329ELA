@@ -24,6 +24,8 @@ respective owners.
 <xi:include href="./ch-inverses.d/sec-terminology.ptx" />
 <xi:include href="./ch-inverses.d/sec-concepts.ptx" />
 <xi:include href="./ch-inverses.d/sec-examples.ptx" />
-<xi:include href="./ch-inverses.d/sec-theory.ptx" /> -->
+<xi:include href="./ch-inverses.d/sec-theory.ptx" /> 
+<xi:include href="./ch-inverses.d/sec-exercises.ptx" />
+<xi:include href="./ch-inverses.d/sec-reflections.ptx" />-->
 
 </chapter>

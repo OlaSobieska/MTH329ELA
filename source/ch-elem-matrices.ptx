@@ -20,11 +20,13 @@ respective owners.
 
 <p>Content!</p>
 
-<!--<xi:include href="./ch-elem-matrices.d/discovery.ptx" />
-<xi:include href="./ch-elem-matrices.d/terminology.ptx" />
-<xi:include href="./elem-matrices.d/concepts.ptx" />
-<xi:include href="./elem-matrices.d/examples.ptx" />
-<xi:include href="./elem-matrices.d/theory.ptx" /> -->
+<!--<xi:include href="./ch-elem-matrices.d/sec-discovery.ptx" />
+<xi:include href="./ch-elem-matrices.d/sec-terminology.ptx" />
+<xi:include href="./ch-elem-matrices.d/sec-concepts.ptx" />
+<xi:include href="./ch-elem-matrices.d/sec-examples.ptx" />
+<xi:include href="./ch-elem-matrices.d/sec-theory.ptx" /> 
+<xi:include href="./ch-elem-matrices.d/sec-exercises.ptx" />
+<xi:include href="./ch-elem-matrices.d/sec-reflections.ptx" />-->
 
 <!-- TODO ....some examples illustrating some of the theory might be in order
 <xi:include href="./elem-matrices.d/more-examples.ptx" />

@@ -24,6 +24,8 @@ respective owners.
 <xi:include href="./ch-special-forms.d/sec-terminology.ptx" />
 <xi:include href="./ch-special-forms.d/sec-concepts.ptx" />
 <xi:include href="./ch-special-forms.d/sec-examples.ptx" />
-<xi:include href="./ch-special-forms.d/sec-theory.ptx" /> -->
+<xi:include href="./ch-special-forms.d/sec-theory.ptx" /> 
+<xi:include href="./ch-special-forms.d/sec-exercises.ptx" />
+<xi:include href="./ch-special-forms.d/sec-reflections.ptx" />-->
 
 </chapter>

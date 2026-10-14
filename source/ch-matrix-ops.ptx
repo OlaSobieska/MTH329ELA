@@ -24,6 +24,8 @@ respective owners.
 <xi:include href="./ch-matrix-ops.d/sec-terminology.ptx" />
 <xi:include href="./ch-matrix-ops.d/sec-concepts.ptx" />
 <xi:include href="./ch-matrix-ops.d/sec-examples.ptx" />
-<xi:include href="./ch-matrix-ops.d/sec-theory.ptx" /> -->
+<xi:include href="./ch-matrix-ops.d/sec-theory.ptx" /> 
+<xi:include href="./ch-matrix-ops.d/sec-exercises.ptx" />
+<xi:include href="./ch-matrix-ops.d/sec-reflections.ptx" />-->
 
 </chapter>

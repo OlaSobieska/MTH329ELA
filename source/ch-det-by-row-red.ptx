@@ -23,6 +23,8 @@ respective owners.
 <!-- <xi:include href="./ch-det-by-row-red.d/sec-discovery.ptx" />
 <xi:include href="./ch-det-by-row-red.d/sec-concepts.ptx" />
 <xi:include href="./ch-det-by-row-red.d/sec-examples.ptx" />
-<xi:include href="./ch-det-by-row-red.d/sec-theory.ptx" /> -->
+<xi:include href="./ch-det-by-row-red.d/sec-theory.ptx" /> 
+<xi:include href="./ch-det-by-row-red.d/sec-exercises.ptx" />
+<xi:include href="./ch-det-by-row-red.d/sec-reflections.ptx" />-->
 
 </chapter>
