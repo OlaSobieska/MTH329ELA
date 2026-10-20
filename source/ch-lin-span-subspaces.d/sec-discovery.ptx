@@ -116,7 +116,7 @@ respective owners.
 <activity xml:id="activity-span-geometrically-degenerate">
     <introduction><p>
         Let <m>\bfw_{1} = \twovec{3}{1}</m> and 
-        <m>\bfw_{2} = \twovec{-6}{2}</m>. 
+        <m>\bfw_{2} = \twovec{-6}{-2}</m>. 
     </p></introduction>
 
     <task><statement><p>

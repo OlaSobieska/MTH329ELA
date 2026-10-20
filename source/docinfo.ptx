@@ -68,6 +68,8 @@
     {\left\lvert\begin{array}{#1}}
     {\end{array}\right\rvert}
 
+    \newcommand{\uvec}[1]{\mathbf{#1}}% undergrad boldface vector
+
     \newcommand{\twovec}[2]
     {{\left[ \begin{array}{r} #1 \\ #2 \end{array} \right]}}
     
