@@ -195,26 +195,26 @@ Luckily, for a finite set of vectors, there is a way to check all of them all at
 <activity xml:id="activity-linear-indep-using-indep-test">
 
 	<introduction><p>
-		In each of the following vector spaces,
-		practice using the <xref ref="paragraphs-linear-indep-discovery-test" text="title" /> of the given set of vectors.
+		In each of the following,
+		practice using the <xref ref="paragraphs-linear-indep-discovery-test" text="title" /> of the given set of vectors <m>S</m>.
 	</p></introduction>
 
 	<task xml:id="activity-linear-indep-using-indep-test-M2-1"><p>
-		<m>V = \matrixring_2(\bbR)</m>,
-		<m>S= \left\{\;
-			\begin{bmatrix} 1 \amp 0 \\ 0 \amp 1 \end{bmatrix}, \;\;
-			\begin{bmatrix} 0 \amp 1 \\ 1 \amp 0 \end{bmatrix}, \;\;
-			\begin{bmatrix} 0 \amp 0 \\ 0 \amp 1 \end{bmatrix} \;
+		In <m>\bbR^4</m>,
+		<m>S= \left\{\
+			\begin{bmatrix} 1 \\ 0 \\ 0 \\ 1 \end{bmatrix}, \
+			\begin{bmatrix} 0 \\ 1 \\ 1 \\ 0 \end{bmatrix}, \
+			\begin{bmatrix} 0 \\ 0 \\ 0 \\ 1 \end{bmatrix} \
 		\right\}
 		</m>.
 	</p></task>
 
 	<task xml:id="activity-linear-indep-using-indep-test-M2-2"><p>
-		<m>V = \matrixring_2(\bbR)</m>,
+		In <m>\bbR^4</m>,
 		<m>S= \left\{\;
-			\begin{bmatrix} 1 \amp 0 \\ 0 \amp  1 \end{bmatrix}, \;\;
-			\begin{bmatrix} 1 \amp 0 \\ 0 \amp -1 \end{bmatrix}, \;\;
-			\begin{bmatrix} 3 \amp 0 \\ 0 \amp -2 \end{bmatrix} \;
+			\begin{bmatrix} 1 \\ 0 \\ 0 \\  1 \end{bmatrix}, \;\;
+			\begin{bmatrix} 1 \\ 0 \\ 0 \\ -1 \end{bmatrix}, \;\;
+			\begin{bmatrix} 3 \\ 0 \\ 0 \\ -2 \end{bmatrix} \;
 		\right\}
 		</m>.
 	</p></task>
@@ -222,20 +222,26 @@ Luckily, for a finite set of vectors, there is a way to check all of them all at
 	<task xml:id="activity-linear-indep-using-indep-test-P2">
 
 		<statement><p>
-			<m>V = \poly(\bbR)</m>,
-			<m>S = \{ 1+x, 1+x^2, 2 - x + 3x^2 \}</m>.
+			In <m>\bbR^3</m>,
+			<m>S= \left\{\
+			\begin{bmatrix} 1 \\ 1 \\ 0 \end{bmatrix}, \
+			\begin{bmatrix} 1 \\ 0 \\ 1 \end{bmatrix}, \
+			\begin{bmatrix} 2 \\ -1 \\ 3 \end{bmatrix} \
+			\right\}
+			</m>.
 		</p></statement>
-
-		<hint><p>
-			After setting up the vector equation from the test for linear dependence/independence, you are solving for the scalars <m>k_1,k_2,k_3</m>, not for <m>x</m>.
-			On the right-hand side, the zero represents the <em>zero vector</em>, which in this space is the <em>zero polynomial</em>.
-			What are the coefficients on powers of <m>x</m> in the zero polynomial?
-			The left-hand side, being equal, must have the same coefficients.
-		</p></hint>
 
 	</task>
 
-	<task><p> <m>V = \poly(\bbR)</m>, <m>S = \{ 1, x, x^2, x^3 \}</m>. </p></task>
+	<task><p> In <m>\bbR^4</m>, 
+			<m>S= \left\{\
+			\begin{bmatrix} 1 \\ 0 \\ 0 \\ 0 \end{bmatrix}, \
+			\begin{bmatrix} 0 \\ 1 \\ 0 \\ 0 \end{bmatrix}, \
+			\begin{bmatrix} 0 \\ 0 \\ 1 \\ 0 \end{bmatrix}, \
+			\begin{bmatrix} 0 \\ 0 \\ 0 \\ 1 \end{bmatrix} \
+			\right\}
+			</m>. 
+		</p></task>
 
 </activity>
 
