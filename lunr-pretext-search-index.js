@@ -628,7 +628,16 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "14.1",
   "title": "Discovery guide",
-  "body": " Discovery guide    Recall (or learn) that a vector is a linear combination of vectors if you can write as a sum of scalar multiples of , i.e. if you can find scalars so that These are called coefficients , or sometimes weights .   Let and .  Is a linear combination of and ?  Is a linear combination of and ?  Can you identify which vectors in can be written as a linear combination of and ? Which vectors cannot be written as a linear combination of and ?  For any vectors that can be written as a linear combination of and , determine which coefficients need to be used.    The collection of all possible linear combinations of a set of vectors is called the span of those vectors, denoted     What is for and from ? (You already computed it in the previous exercise! You're just trying new vocab on.)    Let and .  What is ? Draw it on a coordinate plane.  What is ? Draw it on a coordinate plane (maybe in a different color, if you have it).  What is ? Describe it in terms of the coordinate plane (may be hard to draw).  The vector is in . Can you interpret it in the context of the pictures you have drawn?  If , what is ? How does it compare to ?    Let and .  What is ? Draw it on a coordinate plane.  What is ? Draw it on a coordinate plane (maybe in a different color, if you have it).  What is ? Draw it on the coordinate plane.  How does this differ from in ? What is it about and that changes the outcome?   One of the major properties of real vectors in is that we can add them together and scale them the same way we do real numbers. If a smaller space inside of also has these properties, it has a special name.   A subspace of is a subset of that satisfies the following three properties:    is in .    If and are in , then so is .    If is in , then so is for any real number .        For each of the following collections of vectors, check each criterion from to see if that collection is a subspace.  If you think a criterion is true , justify it without resorting to specific examples .  If you think a criterion is false , provide an explicit example that demonstrates its failure .     In : All points on the line .  All points on the line .  All points on the circle of radius 1 centered at the origin.   In : All points on the -plane.  The plane parallel to the -plane at height .  All column vectors that satisfy the matrix equation , where is some fixed matrix.   .    "
+  "body": " Discovery guide  Recall (or learn) that a vector is a linear combination of vectors if you can write as a sum of scalar multiples of , i.e. if you can find scalars so that These are called coefficients , or sometimes weights .   Let and .  Is a linear combination of and ?  Is a linear combination of and ?  Can you identify which vectors in can be written as a linear combination of and ? Which vectors cannot be written as a linear combination of and ?  For any vectors that can be written as a linear combination of and , determine which coefficients need to be used.    The collection of all possible linear combinations of a set of vectors is called the span of those vectors, denoted     What is for and from ? (You already computed it in the previous exercise! You're just trying new vocab on.)    Let and .  What is ? Draw it on a coordinate plane.  What is ? Draw it on a coordinate plane (maybe in a different color, if you have it).  What is ? Describe it in terms of the coordinate plane (may be hard to draw).  The vector is in . Can you interpret it in the context of the pictures you have drawn?  If , what is ? How does it compare to ?    Let and .  What is ? Draw it on a coordinate plane.  What is ? Draw it on a coordinate plane (maybe in a different color, if you have it).  What is ? Draw it on the coordinate plane.  How does this differ from in ? What is it about and that changes the outcome?   One of the major properties of real vectors in is that we can add them together and scale them the same way we do real numbers. If a smaller space inside of also has these properties, it has a special name.   A subspace of is a subset of that satisfies the following three properties:    is in .    If and are in , then so is .    If is in , then so is for any real number .        For each of the following collections of vectors, check each criterion from to see if that collection is a subspace.  If you think a criterion is true , justify it without resorting to specific examples .  If you think a criterion is false , provide an explicit example that demonstrates its failure .     In : All points on the line .  All points on the line .  All points on the circle of radius 1 centered at the origin.   In : All points on the -plane.  The plane parallel to the -plane at height .  All column vectors that satisfy the matrix equation , where is some fixed matrix.   .    "
+},
+{
+  "id": "worksheet-lin-span-subspaces-2-1",
+  "level": "2",
+  "url": "worksheet-lin-span-subspaces.html#worksheet-lin-span-subspaces-2-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "linear combination coefficients weights "
 },
 {
   "id": "activity-linear-combinations-refresher",
@@ -637,7 +646,7 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "14.1.1",
   "title": "",
-  "body": "  Recall (or learn) that a vector is a linear combination of vectors if you can write as a sum of scalar multiples of , i.e. if you can find scalars so that These are called coefficients , or sometimes weights .   Let and .  Is a linear combination of and ?  Is a linear combination of and ?  Can you identify which vectors in can be written as a linear combination of and ? Which vectors cannot be written as a linear combination of and ?  For any vectors that can be written as a linear combination of and , determine which coefficients need to be used.  "
+  "body": " Let and .  Is a linear combination of and ?  Is a linear combination of and ?  Can you identify which vectors in can be written as a linear combination of and ? Which vectors cannot be written as a linear combination of and ?  For any vectors that can be written as a linear combination of and , determine which coefficients need to be used.  "
 },
 {
   "id": "definition-span",
@@ -692,6 +701,87 @@ var ptx_lunr_docs = [
   "number": "14.1.7",
   "title": "",
   "body": "  For each of the following collections of vectors, check each criterion from to see if that collection is a subspace.  If you think a criterion is true , justify it without resorting to specific examples .  If you think a criterion is false , provide an explicit example that demonstrates its failure .     In : All points on the line .  All points on the line .  All points on the circle of radius 1 centered at the origin.   In : All points on the -plane.  The plane parallel to the -plane at height .  All column vectors that satisfy the matrix equation , where is some fixed matrix.   .   "
+},
+{
+  "id": "worksheet-linear-indep",
+  "level": "1",
+  "url": "worksheet-linear-indep.html",
+  "type": "Worksheet",
+  "number": "15.1",
+  "title": "Discovery guide",
+  "body": " Discovery guide   Consider the vectors , , and .   Do you remember what means? Explain why the vector is in .  Note You can compute if you like, but it is not necessary.    Actually, can be expressed as a linear combination of and  do you see how?  Use this and the expression for in to express as a linear combination of just  and .     shows that is in . Do you think that similar calculations and the same reasoning can be carried out for every vector in ?  What does this say about versus ?     demonstrates a common pattern: when one of the vectors in a spanning set can be expressed as a linear combination of the others, that vector becomes redundant , and a smaller spanning set can be used in place of the original one. We'll give this situation a name: a set of vectors is called linearly dependent linearly dependent if (at least) one of the vectors in the set can be written as a linear combination of other vectors in the set; otherwise the set of vectors is called linearly independent linearly independent . However, it can be tedious to check each vector in a set one-by-one to see if it is a linear combination of others. Luckily, for a finite set of vectors, there is a way to check all of them all at once.   Test for Linear Dependence\/Independence  To test whether vectors are linearly dependent or independent, set up the vector equation , where the coefficients are (scalar) variables.  Check your understanding Do you see why equation always has at least the trivial solution?   If vector equation has a nontrivial solution in the variables , then the vectors are linearly dependent .  Otherwise, if vector equation has only the trivial solution , then the vectors are linearly independent .      Use the test to verify that from are linearly dependent.  Note Forming vector equation using the three vectors of Discovery should lead to a homogeneous linear system in variables . Look at the columns in your matrix for this homogeneous ystem what pattern do you notice?   Use the test to verify that from are linearly independent.    The next discovery activity will help you understand the . To keep it simple, we'll consider just three vectors at a time.   Consider abstract vectors , and suppose the vector equation has a nontrivial solution. This means that there are values for the scalars , at least one of which is not zero, so that equation is true.  Use some algebra to manipulate equation to demonstrate that one of the vectors can be expressed as a linear combination of the others (and hence, by definition , the vectors are linearly dependent).  Careful Make sure you don't accidentally divide by zero!    Consider abstract vectors , and suppose the vector equation has only the trivial solution. We would like to see why this means that are linearly independent.  Suppose they weren't: for example, suppose were true for some scalars . Manipulate this expression for until is says something about equation . Do you see now why  cannot satisfy the definition of linearly dependence, and hence must be linearly independent?     In each of the following, practice using the of the given set of vectors .  In , .  In , .   In , .   In , .    Do you think it's possible to have a set of three linearly independent vectors in ? Why or why not?  Do you think it's possible to have a set of four linearly independent vectors in ? Why or why not?    What does the definition of linear dependence say in the case of just two vectors?  If the test for linear dependence\/independence is to remain true in the case of a set of vectors consisting of just one vector, how should we define linear dependence\/independence for such a set?   "
+},
+{
+  "id": "activity-linear-indep-motivation",
+  "level": "2",
+  "url": "worksheet-linear-indep.html#activity-linear-indep-motivation",
+  "type": "Activity",
+  "number": "15.1.1",
+  "title": "",
+  "body": " Consider the vectors , , and .   Do you remember what means? Explain why the vector is in .  Note You can compute if you like, but it is not necessary.    Actually, can be expressed as a linear combination of and  do you see how?  Use this and the expression for in to express as a linear combination of just  and .     shows that is in . Do you think that similar calculations and the same reasoning can be carried out for every vector in ?  What does this say about versus ?   "
+},
+{
+  "id": "worksheet-linear-indep-3",
+  "level": "2",
+  "url": "worksheet-linear-indep.html#worksheet-linear-indep-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "linearly dependent linearly independent "
+},
+{
+  "id": "paragraphs-linear-indep-discovery-test-4",
+  "level": "2",
+  "url": "worksheet-linear-indep.html#paragraphs-linear-indep-discovery-test-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "linearly dependent linearly independent "
+},
+{
+  "id": "activity-linear-indep-test",
+  "level": "2",
+  "url": "worksheet-linear-indep.html#activity-linear-indep-test",
+  "type": "Activity",
+  "number": "15.1.2",
+  "title": "",
+  "body": "  Use the test to verify that from are linearly dependent.  Note Forming vector equation using the three vectors of Discovery should lead to a homogeneous linear system in variables . Look at the columns in your matrix for this homogeneous ystem what pattern do you notice?   Use the test to verify that from are linearly independent.  "
+},
+{
+  "id": "activity-linear-indep-understand-test",
+  "level": "2",
+  "url": "worksheet-linear-indep.html#activity-linear-indep-understand-test",
+  "type": "Activity",
+  "number": "15.1.3",
+  "title": "",
+  "body": " The next discovery activity will help you understand the . To keep it simple, we'll consider just three vectors at a time.   Consider abstract vectors , and suppose the vector equation has a nontrivial solution. This means that there are values for the scalars , at least one of which is not zero, so that equation is true.  Use some algebra to manipulate equation to demonstrate that one of the vectors can be expressed as a linear combination of the others (and hence, by definition , the vectors are linearly dependent).  Careful Make sure you don't accidentally divide by zero!    Consider abstract vectors , and suppose the vector equation has only the trivial solution. We would like to see why this means that are linearly independent.  Suppose they weren't: for example, suppose were true for some scalars . Manipulate this expression for until is says something about equation . Do you see now why  cannot satisfy the definition of linearly dependence, and hence must be linearly independent?   "
+},
+{
+  "id": "activity-linear-indep-using-indep-test",
+  "level": "2",
+  "url": "worksheet-linear-indep.html#activity-linear-indep-using-indep-test",
+  "type": "Activity",
+  "number": "15.1.4",
+  "title": "",
+  "body": " In each of the following, practice using the of the given set of vectors .  In , .  In , .   In , .   In , .  "
+},
+{
+  "id": "activity-linear-indep-max-indep-in-R2-R3",
+  "level": "2",
+  "url": "worksheet-linear-indep.html#activity-linear-indep-max-indep-in-R2-R3",
+  "type": "Activity",
+  "number": "15.1.5",
+  "title": "",
+  "body": " Do you think it's possible to have a set of three linearly independent vectors in ? Why or why not?  Do you think it's possible to have a set of four linearly independent vectors in ? Why or why not?  "
+},
+{
+  "id": "activity-linear-indep-one-or-two",
+  "level": "2",
+  "url": "worksheet-linear-indep.html#activity-linear-indep-one-or-two",
+  "type": "Activity",
+  "number": "15.1.6",
+  "title": "",
+  "body": " What does the definition of linear dependence say in the case of just two vectors?  If the test for linear dependence\/independence is to remain true in the case of a set of vectors consisting of just one vector, how should we define linear dependence\/independence for such a set?  "
 },
 {
   "id": "backmatter-2",
