@@ -62,12 +62,12 @@ You can imagine repeating this process until finally you are left with a spannin
 
 	<task xml:id="activity-basis-coords-basis-exmps-R3-1"><p>
 		<m>H = \bbR^3</m>,
-		<m>S = \{(1,0,0),(1,1,0),(1,1,1),(0,0,2)\}</m>.
+		<m>S = \left\{\threevec{1}{0}{0},\threevec{1}{1}{0},\threevec{1}{1}{1},\threevec{0}{0}{2}\right\}</m>.
 	</p></task>
 
 	<task xml:id="activity-basis-coords-basis-exmps-R3-2"><p>
 		<m>H = \bbR^3</m>,
-		<m>S = \{(1,0,0),(1,1,0),(0,0,2)\}</m>.
+		<m>S = \left\{\threevec{1}{0}{0},\threevec{1}{1}{0},\threevec{0}{0}{2}\right\}</m>.
 	</p></task>
 
 	<task xml:id="activity-basis-coords-basis-exmps-M2"><p>
@@ -113,7 +113,7 @@ You can imagine repeating this process until finally you are left with a spannin
 	</p></task> 
 
 	<task xml:id="activity-basis-coords-basis-exmps-P3-2"><p>
-		<m>V = \bbR^4</m>,
+		<m>H = \bbR^4</m>,
 		<m>S = \{\mathbf{e}_1, \mathbf{e}_2, \mathbf{e}_3\}</m>.
 	</p></task>
 
