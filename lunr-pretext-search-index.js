@@ -784,6 +784,60 @@ var ptx_lunr_docs = [
   "body": " What does the definition of linear dependence say in the case of just two vectors?  If the test for linear dependence\/independence is to remain true in the case of a set of vectors consisting of just one vector, how should we define linear dependence\/independence for such a set?  "
 },
 {
+  "id": "worksheet-basis-coords",
+  "level": "1",
+  "url": "worksheet-basis-coords.html",
+  "type": "Worksheet",
+  "number": "16",
+  "title": "Discovery guide",
+  "body": " Discovery guide   Suppose is a subspace of and is a finite spanning set for (  ). In the previous chapter, we saw that if is linearly dependent, then (at least) one vector can be removed from , and the resulting smaller set will still be a spanning set of . You can imagine repeating this process until finally you are left with a spanning set that is linearly independent.   This leads to the following definition.   basis for a subspace  a linearly independent spanning set for the subspace      In each of the following, determine whether is a basis for . If it is not a basis, make sure you know which property violates, independence or spanning.  Note A specific example could violate both, but we only need to know it violates one of the two properties to know it's not a basis.    , .   , .   , .    , .   , .    As discussed in the introduction to this discovery guide above, a spanning set that is not linearly independent contains redundant information in the form of vectors that are not actually needed to form a spanning set. This redundancy manifests itself in other ways, as the next discovery activity will demonstrate.  Consider the set of vectors in . This set spans but is not linearly independent.   Since spans , it is possible to express vector as a linear combination of the vectors in . Demonstrate a way to do this: .   Here is the redundant part. Demonstrate a different way to express as a linear combination of the vectors in : .    How many different ways do you think there are to do this?    The next discovery activity will demonstrate that the redundancies of cannot happen for a basis .   Suppose is a subspace of , is a basis for , and is a vector in . Since is a spanning set, there is a way to express as linear combinations of the vectors in : . Suppose there were a different such expression: . Use the vector identity and the two different expressions for above to show that having these two different expressions violates the linear independence of .      shows that when we have a basis for a subspace , each vector in has one unique expression as a linear combination of the vectors in . For , the coefficients are called the coordinates of relative to coordinates vector coordinates . Since these coordinates consist of coefficients, we sometimes relate to a vector in by collecting its coordinates into an -tuple: . This is called the coordinate vector of relative to coordinate vector vector coordinate .  In each of the following, determine the coordinate vector of relative to the provided basis for .    , , .   , , .    In each of the following, determine which vector in has the given coordinate vector .    , , .   , , .    "
+},
+{
+  "id": "activity-basis-coords-basis-exmps",
+  "level": "2",
+  "url": "worksheet-basis-coords.html#activity-basis-coords-basis-exmps",
+  "type": "Activity",
+  "number": "16.0.1",
+  "title": "",
+  "body": "  In each of the following, determine whether is a basis for . If it is not a basis, make sure you know which property violates, independence or spanning.  Note A specific example could violate both, but we only need to know it violates one of the two properties to know it's not a basis.    , .   , .   , .    , .   , .  "
+},
+{
+  "id": "activity-basis-coords-lin-dep-coords",
+  "level": "2",
+  "url": "worksheet-basis-coords.html#activity-basis-coords-lin-dep-coords",
+  "type": "Activity",
+  "number": "16.0.2",
+  "title": "",
+  "body": " As discussed in the introduction to this discovery guide above, a spanning set that is not linearly independent contains redundant information in the form of vectors that are not actually needed to form a spanning set. This redundancy manifests itself in other ways, as the next discovery activity will demonstrate.  Consider the set of vectors in . This set spans but is not linearly independent.   Since spans , it is possible to express vector as a linear combination of the vectors in . Demonstrate a way to do this: .   Here is the redundant part. Demonstrate a different way to express as a linear combination of the vectors in : .    How many different ways do you think there are to do this?  "
+},
+{
+  "id": "activity-basis-coords-unique-coords",
+  "level": "2",
+  "url": "worksheet-basis-coords.html#activity-basis-coords-unique-coords",
+  "type": "Activity",
+  "number": "16.0.3",
+  "title": "",
+  "body": " The next discovery activity will demonstrate that the redundancies of cannot happen for a basis .   Suppose is a subspace of , is a basis for , and is a vector in . Since is a spanning set, there is a way to express as linear combinations of the vectors in : . Suppose there were a different such expression: . Use the vector identity and the two different expressions for above to show that having these two different expressions violates the linear independence of .   "
+},
+{
+  "id": "activity-basis-coords-compute-coords",
+  "level": "2",
+  "url": "worksheet-basis-coords.html#activity-basis-coords-compute-coords",
+  "type": "Activity",
+  "number": "16.0.4",
+  "title": "",
+  "body": "  shows that when we have a basis for a subspace , each vector in has one unique expression as a linear combination of the vectors in . For , the coefficients are called the coordinates of relative to coordinates vector coordinates . Since these coordinates consist of coefficients, we sometimes relate to a vector in by collecting its coordinates into an -tuple: . This is called the coordinate vector of relative to coordinate vector vector coordinate .  In each of the following, determine the coordinate vector of relative to the provided basis for .    , , .   , , .  "
+},
+{
+  "id": "activity-basis-coords-compute-from-coords",
+  "level": "2",
+  "url": "worksheet-basis-coords.html#activity-basis-coords-compute-from-coords",
+  "type": "Activity",
+  "number": "16.0.5",
+  "title": "",
+  "body": " In each of the following, determine which vector in has the given coordinate vector .    , , .   , , .  "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
