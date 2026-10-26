@@ -68,6 +68,11 @@
     {\left\lvert\begin{array}{#1}}
     {\end{array}\right\rvert}
 
+    \newcommand{\matrixOfplain}[2]{{\left[#1\right]}_{#2}}% matrix of, do not use basis font
+    \newcommand{\rmatrixOfplain}[2]{{\left(#1\right)}_{#2}}% matrix of, round brackets, does not use basis font
+    \newcommand{\rmatrixOf}[2]{\rmatrixOfplain{#1}{\basisfont{#2}}}% matrix of, round brackets
+    \newcommand{\matrixOf}[2]{\matrixOfplain{#1}{\basisfont{#2}}}% matrix of
+
     \newcommand{\uvec}[1]{\mathbf{#1}}% undergrad boldface vector
 
     \newcommand{\twovec}[2]

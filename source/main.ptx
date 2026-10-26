@@ -27,6 +27,7 @@
 	  <xi:include href="./ch-orthog.ptx" />
     <xi:include href="./ch-lin-span-subspaces.ptx" />
     <xi:include href="./ch-linear-indep.ptx" />
+    <xi:include href="./ch-basis-coords.ptx" />
 
     <!-- Include backmatter -->
     <xi:include href="./backmatter.ptx" />
