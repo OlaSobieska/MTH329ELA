@@ -138,7 +138,7 @@ You can imagine repeating this process until finally you are left with a spannin
 	<task>
 		<p>
 		Since <m>S</m> spans <m>\bbR^2</m>,
-		it is possible to express vector <m>\twovec{3}{-2}</m> as a linear combination of the vectors in <m>S</m>.
+		it is possible to express vector <m>\twovec{3}{-3}</m> as a linear combination of the vectors in <m>S</m>.
 		</p><p>
 		Demonstrate a way to do this:
 		<me>
@@ -152,9 +152,9 @@ You can imagine repeating this process until finally you are left with a spannin
 
 	<task><p>
 		Here is the redundant part.
-		Demonstrate a <em>different</em> way to express <m>(3,-3)</m> as a linear combination of the vectors in <m>S</m>:
+		Demonstrate a <em>different</em> way to express <m>\twovec{3}{-3}</m> as a linear combination of the vectors in <m>S</m>:
 		<me>
-			(3,-3)
+			\twovec{3}{-3}
 			\; = \; <fillin characters="2" />\twovec{1}{0}
 			\; + \; <fillin characters="2" />\twovec{1}{1}
 			\; + \; <fillin characters="2" />\twovec{1}{-1}
