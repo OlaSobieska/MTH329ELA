@@ -116,7 +116,7 @@ eBookConfig.enable_chatcodes =  false;
 <legend>Assistive technologies</legend>
 <label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
 </fieldset>
-<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="ch-basis-coords.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-basis-coords.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="ch-basis-coords.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-basis-coords.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ch-dimension.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\bbN}{\mathbb N}
 \newcommand{\bbZ}{\mathbb Z}
 \newcommand{\bbQ}{\mathbb Q}
@@ -233,6 +233,10 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch-basis-coords.html" class="internal"><span class="codenumber">16</span> <span class="title">Basis and Coordinates</span></a></div>
 <ul class="structural toc-item-list contains-active" id="ptx-toc-group-ch-basis-coords"><li class="toc-item toc-worksheet active"><div class="toc-title-box"><a href="worksheet-basis-coords.html" class="internal"><span class="codenumber">16</span> <span class="title">Discovery guide</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-dimension.html" class="internal"><span class="codenumber">17</span> <span class="title">Dimension</span></a></div>
+<ul id="ptx-toc-group-ch-dimension" class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="worksheet-dimension.html" class="internal"><span class="codenumber">17.1</span> <span class="title">Discovery guide</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
@@ -371,7 +375,7 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 </div>
 <article class="task exercise-like" id="activity-basis-coords-lin-dep-coords-3"><h3 class="heading"><span class="codenumber">(a)</span></h3>
-<div class="para" id="activity-basis-coords-lin-dep-coords-3-1">Since <span class="process-math">\(S\)</span> spans <span class="process-math">\(\bbR^2\text{,}\)</span> it is possible to express vector <span class="process-math">\(\twovec{3}{-2}\)</span> as a linear combination of the vectors in <span class="process-math">\(S\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-basis-coords-lin-dep-coords-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="activity-basis-coords-lin-dep-coords-3-1">Since <span class="process-math">\(S\)</span> spans <span class="process-math">\(\bbR^2\text{,}\)</span> it is possible to express vector <span class="process-math">\(\twovec{3}{-3}\)</span> as a linear combination of the vectors in <span class="process-math">\(S\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#activity-basis-coords-lin-dep-coords-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="activity-basis-coords-lin-dep-coords-3-2">
 <div class="para">Demonstrate a way to do this:</div>
@@ -389,11 +393,11 @@ eBookConfig.enable_chatcodes =  false;
 </article>
 <article class="task exercise-like" id="activity-basis-coords-lin-dep-coords-4"><h3 class="heading"><span class="codenumber">(b)</span></h3>
 <div class="para logical" id="activity-basis-coords-lin-dep-coords-4-1">
-<div class="para">Here is the redundant part. Demonstrate a <em class="emphasis">different</em> way to express <span class="process-math">\((3,-3)\)</span> as a linear combination of the vectors in <span class="process-math">\(S\text{:}\)</span>
+<div class="para">Here is the redundant part. Demonstrate a <em class="emphasis">different</em> way to express <span class="process-math">\(\twovec{3}{-3}\)</span> as a linear combination of the vectors in <span class="process-math">\(S\text{:}\)</span>
 </div>
 <div class="displaymath process-math" id="activity-basis-coords-lin-dep-coords-4-1-4">
 \begin{equation*}
-(3,-3)
+\twovec{3}{-3}
 \; = \; \fillinmath{XX}\twovec{1}{0}
 \; + \; \fillinmath{XX}\twovec{1}{1}
 \; + \; \fillinmath{XX}\twovec{1}{-1}\text{.}
@@ -499,7 +503,7 @@ eBookConfig.enable_chatcodes =  false;
 </section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
-<a class="previous-button button" href="ch-basis-coords.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="ch-basis-coords.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-dimension.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

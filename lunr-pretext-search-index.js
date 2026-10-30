@@ -838,6 +838,69 @@ var ptx_lunr_docs = [
   "body": " In each of the following, determine which vector in has the given coordinate vector .    , , .   , , .  "
 },
 {
+  "id": "worksheet-dimension",
+  "level": "1",
+  "url": "worksheet-dimension.html",
+  "type": "Worksheet",
+  "number": "17.1",
+  "title": "Discovery guide",
+  "body": " Discovery guide  Recall  A basis for a subspace is a linearly independent spanning set.    Answer each of the following assuming nonzero vectors in .  What geometric shape is the span of one nonzero vector?   What is the definition of linearly dependent for a set of two vectors?  What does this mean geometrically?  What is the shape of the span of two nonzero linearly dependent vectors?    What does linearly independent mean geometrically for a set of two vectors?  What is the shape of the span of two linearly independent vectors?   Based on your answers so far, do you think a set of two vectors can be a basis for ?   What is the definition of linearly dependent for a set of three vectors?  What does this mean geometrically?  What is the shape of the span of three nonzero linearly dependent vectors? (There are actually two possibilities here.)    What does linearly independent mean geometrically for a set of three vectors?  What is the shape of the span of three linearly independent vectors?   Do you think a set of four vectors can be a basis for ?   Determine the dimension of each of the following subspaces of . In each case, how does the number you come up with correspond with the answers you've given throughout this activity?  A line through the origin.  A plane through the origin.  All of .  The trivial subspace ( just the origin).   We've been using the word dimension informally throughout our development of the concepts of vectors ( calling vectors in  two-dimensional vectors), but finally we can match our intuition about the dimension of the various types of subspaces of with the theoretical concepts of linear independence and spanning to make the following definition.  dimension of a subspace  the number of vectors required in a basis for that space     One way to obtain a basis for a space (and hence to determine its dimension) is to assign parameters  then each independent parameter corresponds to a basis vector. For example, in we have natural parameters associated to the - and -coordinates: . Expanding this into a linear combination, we get . Parameter corresponds to vector and parameter corresponds to vector , and together the two corresponding vectors form a basis for . (In fact, the standard basis for !). Since there were two independent parameters required to described an arbitrary vector in the space, this led to two basis vectors, and so the dimension of is (surprise!) .  Step-by-step procedure The above can be generalized to a step-by-step procedure for finding a basis:  Express arbitrary elements in the space in terms of parameters.  Use any extra conditions to reduce to the minimum number of independent parameters (if necessary).  Split up your parametric vector description into a linear combination based on the remaining parameters.  Extract the basis vector attached to each parameter.  Count the basis vectors to determine the dimension of the space (which should also correspond to the number of independent parameters required).    In each of the following, determine a basis for the given space using the parameter method outlined above, similarly to the provided example. Then count the dimension of the space.   .  The subspace of consisting of vectors whose second coordinate is zero.  The subspace of consisting of vectors whose first and third coordinates are equal.       In the following, we will practice enlarging a linear independent set that is not (yet) a spanning set to build up a basis.   In each of the following, enlarge the provided linearly independent set into a basis for the space.  Hint: Since we now know the dimensions of these spaces, we know how many linearly independent vectors are required to form a basis. Just guess simple new vectors to include in the given set, one at a time, and for each make sure your new vector is not a linear combination of the vectors you already have. (You can check this by trying to solve an appropriate system of linear equations.)    , .   , .    Suppose is a subspace of .   What is the relationship between and ? Justify your answer in terms of the definition of dimension.  The pattern of the previous exercise, where a linearly independent set can be built up into a basis, might help in articulating your justification.   Is it possible for to be true?   "
+},
+{
+  "id": "worksheet-dimension-2-1-2",
+  "level": "2",
+  "url": "worksheet-dimension.html#worksheet-dimension-2-1-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "basis "
+},
+{
+  "id": "activity-dimension-dim-subsp-R3",
+  "level": "2",
+  "url": "worksheet-dimension.html#activity-dimension-dim-subsp-R3",
+  "type": "Activity",
+  "number": "17.1.1",
+  "title": "",
+  "body": " Answer each of the following assuming nonzero vectors in .  What geometric shape is the span of one nonzero vector?   What is the definition of linearly dependent for a set of two vectors?  What does this mean geometrically?  What is the shape of the span of two nonzero linearly dependent vectors?    What does linearly independent mean geometrically for a set of two vectors?  What is the shape of the span of two linearly independent vectors?   Based on your answers so far, do you think a set of two vectors can be a basis for ?   What is the definition of linearly dependent for a set of three vectors?  What does this mean geometrically?  What is the shape of the span of three nonzero linearly dependent vectors? (There are actually two possibilities here.)    What does linearly independent mean geometrically for a set of three vectors?  What is the shape of the span of three linearly independent vectors?   Do you think a set of four vectors can be a basis for ?   Determine the dimension of each of the following subspaces of . In each case, how does the number you come up with correspond with the answers you've given throughout this activity?  A line through the origin.  A plane through the origin.  All of .  The trivial subspace ( just the origin).   We've been using the word dimension informally throughout our development of the concepts of vectors ( calling vectors in  two-dimensional vectors), but finally we can match our intuition about the dimension of the various types of subspaces of with the theoretical concepts of linear independence and spanning to make the following definition.  dimension of a subspace  the number of vectors required in a basis for that space    "
+},
+{
+  "id": "worksheet-dimension-5",
+  "level": "2",
+  "url": "worksheet-dimension.html#worksheet-dimension-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "standard basis "
+},
+{
+  "id": "activity-dimension-basis-via-parameters",
+  "level": "2",
+  "url": "worksheet-dimension.html#activity-dimension-basis-via-parameters",
+  "type": "Activity",
+  "number": "17.1.2",
+  "title": "",
+  "body": " In each of the following, determine a basis for the given space using the parameter method outlined above, similarly to the provided example. Then count the dimension of the space.   .  The subspace of consisting of vectors whose second coordinate is zero.  The subspace of consisting of vectors whose first and third coordinates are equal.   "
+},
+{
+  "id": "activity-dimension-enlarge-indep",
+  "level": "2",
+  "url": "worksheet-dimension.html#activity-dimension-enlarge-indep",
+  "type": "Activity",
+  "number": "17.1.3",
+  "title": "",
+  "body": "  In the following, we will practice enlarging a linear independent set that is not (yet) a spanning set to build up a basis.   In each of the following, enlarge the provided linearly independent set into a basis for the space.  Hint: Since we now know the dimensions of these spaces, we know how many linearly independent vectors are required to form a basis. Just guess simple new vectors to include in the given set, one at a time, and for each make sure your new vector is not a linear combination of the vectors you already have. (You can check this by trying to solve an appropriate system of linear equations.)    , .   , .  "
+},
+{
+  "id": "activity-dimension-dim-subspace",
+  "level": "2",
+  "url": "worksheet-dimension.html#activity-dimension-dim-subspace",
+  "type": "Activity",
+  "number": "17.1.4",
+  "title": "",
+  "body": " Suppose is a subspace of .   What is the relationship between and ? Justify your answer in terms of the definition of dimension.  The pattern of the previous exercise, where a linearly independent set can be built up into a basis, might help in articulating your justification.   Is it possible for to be true?  "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
