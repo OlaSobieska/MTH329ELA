@@ -132,15 +132,15 @@ and so the dimension of <m>\bbR^2</m> is (surprise!) <m>2</m>.
 	<task xml:id="activity-dimension-basis-via-parameters-R3-first-equal-third"><p>
 		The subspace of <m>\bbR^3</m> consisting of vectors whose first and third coordinates are equal.
 	</p></task>
+	<task xml:id="activity-dimension-basis-via-parameters-M2-upper-tri-diag-add-zero"><p>
+		The subspace of <m>\bbR^3</m> consisting of vectors whose components add to zero.
+	</p></task>
 	<!--<task xml:id="activity-dimension-basis-via-parameters-M2-full"><p>
 		<m>\matrixring_2(\bbR)</m>,
 		<ie /> the space of <m>2\times 2</m> matrices.
 	</p></task>
 	<task xml:id="activity-dimension-basis-via-parameters-M2-upper-tri-full"><p>
 		The subspace of <m>\matrixring_2(\bbR)</m> consisting of upper-triangular matrices.
-	</p></task>
-	<task xml:id="activity-dimension-basis-via-parameters-M2-upper-tri-diag-add-zero"><p>
-		The subspace of <m>\matrixring_2(\bbR)</m> consisting of upper-triangular matrices whose diagonal entries add to zero.
 	</p></task>
 	<task xml:id="activity-dimension-basis-via-parameters-M2-sum-to-zero"><p>
 		The subspace of <m>\matrixring_2(\R)</m> consisting of matrices whose entries sum to zero.
