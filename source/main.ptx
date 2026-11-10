@@ -29,6 +29,8 @@
     <xi:include href="./ch-linear-indep.ptx" />
     <xi:include href="./ch-basis-coords.ptx" />
     <xi:include href="./ch-dimension.ptx" />
+    <xi:include href="./ch-col-row-null-space.ptx" />
+    <xi:include href="./ch-lin-trans-intro.ptx" />
 
     <!-- Include backmatter -->
     <xi:include href="./backmatter.ptx" />
