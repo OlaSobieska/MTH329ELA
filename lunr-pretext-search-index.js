@@ -901,6 +901,177 @@ var ptx_lunr_docs = [
   "body": " Suppose is a subspace of .   What is the relationship between and ? Justify your answer in terms of the definition of dimension.  The pattern of the previous exercise, where a linearly independent set can be built up into a basis, might help in articulating your justification.   Is it possible for to be true?  "
 },
 {
+  "id": "worksheet-col-row-null-space",
+  "level": "1",
+  "url": "worksheet-col-row-null-space.html",
+  "type": "Worksheet",
+  "number": "18.1",
+  "title": "Discovery guide",
+  "body": " Discovery guide  In this discovery guide            Column space    Take a minute to remind yourself of the column-wise view of matrix multiplication from in . In words, this matrix multiplication pattern says that in a matrix product ,  the first column of is the result of multiplying matrix against the first column of ,  the second column of is the result of multiplying matrix against the second column of ,  and so on.   In the first discovery activity, we'll use this pattern to obtain another important pattern involving the standard basis vectors.   Notice that the columns of the identity matrix are precisely the standard basis vectors of . Use this observation, the matrix multiplication pattern described above, and the matrix identity to complete the following.  Product is equal to .  Product is equal to .  Product is equal to .      Think of an matrix as being made out of three column vectors from : .   Suppose we want to compute , where (but as a column vector). Use the pattern you discovered in to fill in the following.  Since , then .  From this, we see that the column vector is in the span of   .   Convince yourself that the details\/conclusion of would be the same for every  , not just the example we used.   Now consider system . If this system is consistent ( has at least one solution), then our final conclusion from would also be true about the column vector , since for at least one .  So system can only be consistent if is in the span of   .     For matrix , from it appears that the subspace of obtained by taking the span of the columns of is important when considering consistency of the system . Call this subspace the column space of column space matrix column space . Let's explore how to reduce our spanning set (the columns of ) down to a basis. For this task we'll need a fact about how multiplication by a matrix affects the linear independence of column vectors that we will state as Statement of in . You should read this statement before proceeding.  The following matrix is in RREF:   Build a linearly independent set of column vectors from by working from left to right, and either including or discarding each column based on whether it is linearly independent from the vectors you have already accumulated. (You should, of course, begin by including the first column.) What do you notice about your final set of linearly independent columns, relative to the reduced form of ?  Suppose is a matrix that can be reduced to by a single elementary operation. Then there is an elementary matrix so that where the are the columns of . Use your answer to along with the above-referenced Statement to determine which columns of form a linearly independent set.  Now suppose is a matrix that can be reduced to by two elementary operations. Then there are elementary matrices so that . Similarly to , from , decide which columns of are linearly independent. Then from the above-referenced Statement and (where the are the columns of ), decide which columns of are linearly independent.  Now extrapolate to any number of row operations to complete the following statement: to create a linearly independent set of column vectors from a matrix , row reduce to RREF, and then take those columns of that correspond to in .    Use the procedure you've developed in Discovery to develop a reinterpretation of the for vectors in : if are vectors in , write these vectors as columns in a matrix, row reduce, and then you will know the original vectors are linearly independent if .  Recall that a square matrix is invertible if and only if it can be row reduced to . Use the procedure for testing linear independence that you've developed in to create another condition that is equivalent to invertibility: a square matrix is invertible if and only if its columns .  Let's go full circle. Combine and to complete the following condition: a collection of vectors in is a basis if and only if the square matrix formed by using the vectors as columns has determinant .     Row space  Why let the columns of a matrix have all the fun? Let's now explore the subspace of formed by the span of the rows in an matrix, called the row space  row space  matrix row space of the matrix.   In the next discovery activity, we'll need to recall Statement of that gives us a way to determine when two spans are the same. You should re-read that statement before proceeding.  Assume to be vectors in some vector space .  What does the above-referenced Statement say about and ?  Complete the statement: if matrix is obtained from by swapping two rows, then the row spaces of and of are .  What does the above-referenced Statement say about and ?  Complete the statement: if matrix is obtained from by multiplying some row by a nonzero constant, then the row spaces of and of are .  What does the above-referenced Statement say about and ?  Complete the statement: if matrix is obtained from by adding a multiple of one row to another, then the row spaces of and of are .    Based on , the row spaces of a matrix and of its RREF are .  Determine a basis for the row space of a matrix for which    If you have a collection of vectors in and you want to obtain a basis for the subspace that the collection spans, you now have two options: either use those vectors as the columns in a matrix and row reduce to determine a basis for its column space, or use those vectors as the rows in a matrix and row reduce to determine a basis for its row space. Can you think of a reason you might choose to use column space instead of row space? And a reason you might choose to use row space instead of column space?    Null space  There is one more subspace of associated to a matrix  the solution space of the homogeneous system . Instead of solution space , from this point forward we will refer to it as the null space  null space  matrix null space of .  Recall We have previously used the to show that the solution set of a homogeneous system with a coefficient matrix is a subspace of  see .   Suppose is a matrix whose RREF is as given below. Use the independent parameter method to determine a basis for the null space of .     Relationship between the three spaces   How can you determine the dimensions of the column\/row\/null spaces of a matrix from its RREF?  For an matrix , what is the relationship between the dimension of its column space, the dimension of its null space, and its size?    "
+},
+{
+  "id": "activity-col-row-null-space-matrix-times-stdvec",
+  "level": "2",
+  "url": "worksheet-col-row-null-space.html#activity-col-row-null-space-matrix-times-stdvec",
+  "type": "Activity",
+  "number": "18.1.1",
+  "title": "",
+  "body": "  Take a minute to remind yourself of the column-wise view of matrix multiplication from in . In words, this matrix multiplication pattern says that in a matrix product ,  the first column of is the result of multiplying matrix against the first column of ,  the second column of is the result of multiplying matrix against the second column of ,  and so on.   In the first discovery activity, we'll use this pattern to obtain another important pattern involving the standard basis vectors.   Notice that the columns of the identity matrix are precisely the standard basis vectors of . Use this observation, the matrix multiplication pattern described above, and the matrix identity to complete the following.  Product is equal to .  Product is equal to .  Product is equal to .    "
+},
+{
+  "id": "activity-col-row-null-space-colspan-motivation",
+  "level": "2",
+  "url": "worksheet-col-row-null-space.html#activity-col-row-null-space-colspan-motivation",
+  "type": "Activity",
+  "number": "18.1.2",
+  "title": "",
+  "body": " Think of an matrix as being made out of three column vectors from : .   Suppose we want to compute , where (but as a column vector). Use the pattern you discovered in to fill in the following.  Since , then .  From this, we see that the column vector is in the span of   .   Convince yourself that the details\/conclusion of would be the same for every  , not just the example we used.   Now consider system . If this system is consistent ( has at least one solution), then our final conclusion from would also be true about the column vector , since for at least one .  So system can only be consistent if is in the span of   .   "
+},
+{
+  "id": "activity-col-row-null-space-colspace-basis-proc",
+  "level": "2",
+  "url": "worksheet-col-row-null-space.html#activity-col-row-null-space-colspace-basis-proc",
+  "type": "Activity",
+  "number": "18.1.3",
+  "title": "",
+  "body": " For matrix , from it appears that the subspace of obtained by taking the span of the columns of is important when considering consistency of the system . Call this subspace the column space of column space matrix column space . Let's explore how to reduce our spanning set (the columns of ) down to a basis. For this task we'll need a fact about how multiplication by a matrix affects the linear independence of column vectors that we will state as Statement of in . You should read this statement before proceeding.  The following matrix is in RREF:   Build a linearly independent set of column vectors from by working from left to right, and either including or discarding each column based on whether it is linearly independent from the vectors you have already accumulated. (You should, of course, begin by including the first column.) What do you notice about your final set of linearly independent columns, relative to the reduced form of ?  Suppose is a matrix that can be reduced to by a single elementary operation. Then there is an elementary matrix so that where the are the columns of . Use your answer to along with the above-referenced Statement to determine which columns of form a linearly independent set.  Now suppose is a matrix that can be reduced to by two elementary operations. Then there are elementary matrices so that . Similarly to , from , decide which columns of are linearly independent. Then from the above-referenced Statement and (where the are the columns of ), decide which columns of are linearly independent.  Now extrapolate to any number of row operations to complete the following statement: to create a linearly independent set of column vectors from a matrix , row reduce to RREF, and then take those columns of that correspond to in .  "
+},
+{
+  "id": "activity-col-row-null-space-summarize-col-indep",
+  "level": "2",
+  "url": "worksheet-col-row-null-space.html#activity-col-row-null-space-summarize-col-indep",
+  "type": "Activity",
+  "number": "18.1.4",
+  "title": "",
+  "body": " Use the procedure you've developed in Discovery to develop a reinterpretation of the for vectors in : if are vectors in , write these vectors as columns in a matrix, row reduce, and then you will know the original vectors are linearly independent if .  Recall that a square matrix is invertible if and only if it can be row reduced to . Use the procedure for testing linear independence that you've developed in to create another condition that is equivalent to invertibility: a square matrix is invertible if and only if its columns .  Let's go full circle. Combine and to complete the following condition: a collection of vectors in is a basis if and only if the square matrix formed by using the vectors as columns has determinant .  "
+},
+{
+  "id": "subsection-col-row-null-space-discovery-rowspace-2",
+  "level": "2",
+  "url": "worksheet-col-row-null-space.html#subsection-col-row-null-space-discovery-rowspace-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "row space "
+},
+{
+  "id": "activity-col-row-null-space-row-ops-same-rowspace",
+  "level": "2",
+  "url": "worksheet-col-row-null-space.html#activity-col-row-null-space-row-ops-same-rowspace",
+  "type": "Activity",
+  "number": "18.1.5",
+  "title": "",
+  "body": " In the next discovery activity, we'll need to recall Statement of that gives us a way to determine when two spans are the same. You should re-read that statement before proceeding.  Assume to be vectors in some vector space .  What does the above-referenced Statement say about and ?  Complete the statement: if matrix is obtained from by swapping two rows, then the row spaces of and of are .  What does the above-referenced Statement say about and ?  Complete the statement: if matrix is obtained from by multiplying some row by a nonzero constant, then the row spaces of and of are .  What does the above-referenced Statement say about and ?  Complete the statement: if matrix is obtained from by adding a multiple of one row to another, then the row spaces of and of are .  "
+},
+{
+  "id": "activity-col-row-null-space-summarize-row-space",
+  "level": "2",
+  "url": "worksheet-col-row-null-space.html#activity-col-row-null-space-summarize-row-space",
+  "type": "Activity",
+  "number": "18.1.6",
+  "title": "",
+  "body": " Based on , the row spaces of a matrix and of its RREF are .  Determine a basis for the row space of a matrix for which   "
+},
+{
+  "id": "activity-col-row-null-space-which-one-col-or-row-space",
+  "level": "2",
+  "url": "worksheet-col-row-null-space.html#activity-col-row-null-space-which-one-col-or-row-space",
+  "type": "Activity",
+  "number": "18.1.7",
+  "title": "",
+  "body": "If you have a collection of vectors in and you want to obtain a basis for the subspace that the collection spans, you now have two options: either use those vectors as the columns in a matrix and row reduce to determine a basis for its column space, or use those vectors as the rows in a matrix and row reduce to determine a basis for its row space. Can you think of a reason you might choose to use column space instead of row space? And a reason you might choose to use row space instead of column space? "
+},
+{
+  "id": "subsection-col-row-null-space-discovery-nullspace-2",
+  "level": "2",
+  "url": "worksheet-col-row-null-space.html#subsection-col-row-null-space-discovery-nullspace-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "solution space null space "
+},
+{
+  "id": "subsection-col-row-null-space-discovery-nullspace-4",
+  "level": "2",
+  "url": "worksheet-col-row-null-space.html#subsection-col-row-null-space-discovery-nullspace-4",
+  "type": "Activity",
+  "number": "18.1.8",
+  "title": "",
+  "body": "Suppose is a matrix whose RREF is as given below. Use the independent parameter method to determine a basis for the null space of .  "
+},
+{
+  "id": "activity-col-row-null-space-rank-nullity",
+  "level": "2",
+  "url": "worksheet-col-row-null-space.html#activity-col-row-null-space-rank-nullity",
+  "type": "Activity",
+  "number": "18.1.9",
+  "title": "",
+  "body": " How can you determine the dimensions of the column\/row\/null spaces of a matrix from its RREF?  For an matrix , what is the relationship between the dimension of its column space, the dimension of its null space, and its size?  "
+},
+{
+  "id": "worksheet-lintrans-basic",
+  "level": "1",
+  "url": "worksheet-lintrans-basic.html",
+  "type": "Worksheet",
+  "number": "19.1",
+  "title": "Discovery guide",
+  "body": " Discovery guide    An real matrix creates a function by matrix multiplication: . We will call such a function a matrix transformation  .   Write out linear input-output component formulas for function associated to matrix , so that :   Determine the matrix so that the linear input-ouput component formulas below correspond to a matrix transformation .   Suppose you know that matrix transformation satisfies Do you have enough information to determine matrix ?    Due to the nice properties of matrix multiplication, matrix transformations respect certain algebraic operations.  Suppose is the matrix transformation associated to matrix , so that .    How does interact with the vector operations of the domain space  and the codomain space  ? That is, how does interact with   vector addition?  scalar multiplication?  linear combinations?  negatives?  the zero vector?    Which of the patterns from can be deduced from others of the patterns? (Pause here and check with me!) Based on this, we will make a more general definition.  A function between and , is often called a transformation . A transformation that satisfies the axioms we have identified in Discovery will be called a linear transformation .    In each of the following, determine whether the provided vector space function is a linear transformation.   Translation by a fixed nonzero vector in :   by .    Multiplication by a fixed scalar in :   by .    Projection of onto the -plane:  by     Suppose is a subspace of with , and is a linear transformation such that .  Based on this information, can you determine ?  Would you be able to answer for other vectors in ?   Describe the pattern: in order to be able to compute the output of a linear transformation for every vector in a subspace, the only output information required is .    Suppose is a linear transformation such that    Do you know any other linear transformation that has the same outputs for the standard basis vectors as inputs?  Look back at Discovery .   Based on , and in light of Discovery , what can you say about ?   Describe the pattern: every linear transformation is effectively .     Suppose is a linear transformation. What size of matrix would represent this linear transformation? What word would we normally use to describe a matrix of those dimensions, instead of matrix ?    Describe the pattern: every linear transformation corresponds to a .   "
+},
+{
+  "id": "activity-lintrans-basic-matrix",
+  "level": "2",
+  "url": "worksheet-lintrans-basic.html#activity-lintrans-basic-matrix",
+  "type": "Activity",
+  "number": "19.1.1",
+  "title": "",
+  "body": "  An real matrix creates a function by matrix multiplication: . We will call such a function a matrix transformation  .   Write out linear input-output component formulas for function associated to matrix , so that :   Determine the matrix so that the linear input-ouput component formulas below correspond to a matrix transformation .   Suppose you know that matrix transformation satisfies Do you have enough information to determine matrix ?  "
+},
+{
+  "id": "activity-lintrans-basic-axioms",
+  "level": "2",
+  "url": "worksheet-lintrans-basic.html#activity-lintrans-basic-axioms",
+  "type": "Activity",
+  "number": "19.1.2",
+  "title": "",
+  "body": " Due to the nice properties of matrix multiplication, matrix transformations respect certain algebraic operations.  Suppose is the matrix transformation associated to matrix , so that .    How does interact with the vector operations of the domain space  and the codomain space  ? That is, how does interact with   vector addition?  scalar multiplication?  linear combinations?  negatives?  the zero vector?    Which of the patterns from can be deduced from others of the patterns? (Pause here and check with me!) Based on this, we will make a more general definition.  A function between and , is often called a transformation . A transformation that satisfies the axioms we have identified in Discovery will be called a linear transformation .  "
+},
+{
+  "id": "activity-lintrans-basic-exmps",
+  "level": "2",
+  "url": "worksheet-lintrans-basic.html#activity-lintrans-basic-exmps",
+  "type": "Activity",
+  "number": "19.1.3",
+  "title": "",
+  "body": " In each of the following, determine whether the provided vector space function is a linear transformation.   Translation by a fixed nonzero vector in :   by .    Multiplication by a fixed scalar in :   by .    Projection of onto the -plane:  by   "
+},
+{
+  "id": "activity-lintrans-basic-basis-images",
+  "level": "2",
+  "url": "worksheet-lintrans-basic.html#activity-lintrans-basic-basis-images",
+  "type": "Activity",
+  "number": "19.1.4",
+  "title": "",
+  "body": " Suppose is a subspace of with , and is a linear transformation such that .  Based on this information, can you determine ?  Would you be able to answer for other vectors in ?   Describe the pattern: in order to be able to compute the output of a linear transformation for every vector in a subspace, the only output information required is .  "
+},
+{
+  "id": "activity-lintrans-basic-std-matrix",
+  "level": "2",
+  "url": "worksheet-lintrans-basic.html#activity-lintrans-basic-std-matrix",
+  "type": "Activity",
+  "number": "19.1.5",
+  "title": "",
+  "body": " Suppose is a linear transformation such that    Do you know any other linear transformation that has the same outputs for the standard basis vectors as inputs?  Look back at Discovery .   Based on , and in light of Discovery , what can you say about ?   Describe the pattern: every linear transformation is effectively .  "
+},
+{
+  "id": "activity-lintrans-basic-linfunc-Rn-is-dot-prod",
+  "level": "2",
+  "url": "worksheet-lintrans-basic.html#activity-lintrans-basic-linfunc-Rn-is-dot-prod",
+  "type": "Activity",
+  "number": "19.1.6",
+  "title": "",
+  "body": "  Suppose is a linear transformation. What size of matrix would represent this linear transformation? What word would we normally use to describe a matrix of those dimensions, instead of matrix ?    Describe the pattern: every linear transformation corresponds to a .  "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
